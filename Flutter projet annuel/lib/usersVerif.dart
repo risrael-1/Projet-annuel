@@ -3,6 +3,7 @@ import 'addAdmin.dart';
 import 'adminList.dart';
 import 'anounceVerif.dart';
 import 'home.dart';
+import 'verifCateg.dart';
 
 
 class AccountVerif extends StatelessWidget {
@@ -37,6 +38,16 @@ class AccountVerif extends StatelessWidget {
               },
             ),
             IconButton(
+              icon: const Icon(Icons.account_box),
+              tooltip: 'Vérifier les utilisateurs',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context) =>
+                        AccountVerif()
+                ));
+              },
+            ),
+            IconButton(
               icon: const Icon(Icons.analytics_sharp),
               tooltip: 'Vérifier les annonces',
               onPressed: () {
@@ -44,6 +55,18 @@ class AccountVerif extends StatelessWidget {
                     builder: (context) =>
                         AnnounceVerif()
                 ));
+
+              },
+            ),
+            IconButton(
+              icon: const Icon(Icons.amp_stories_rounded),
+              tooltip: 'Vérifier les categories',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context) =>
+                        ListCateg()
+                ));
+
               },
             ),
             IconButton(

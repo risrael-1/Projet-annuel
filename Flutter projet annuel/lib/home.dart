@@ -4,6 +4,7 @@ import 'adminList.dart';
 import 'anounceVerif.dart';
 import 'main.dart';
 import 'usersVerif.dart';
+import 'verifCateg.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -17,6 +18,16 @@ Widget build(BuildContext context) {
           title: const Text('Accueil'),
           leading: Image.asset('assets/images/benevold.png', height: 20),
           actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.home),
+              tooltip: 'Accueil',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context) =>
+                        HomePage()
+                ));
+              },
+            ),
             IconButton(
               icon: const Icon(Icons.admin_panel_settings),
               tooltip: 'Liste des admins',
@@ -49,6 +60,17 @@ Widget build(BuildContext context) {
               },
             ),
             IconButton(
+              icon: const Icon(Icons.amp_stories_rounded),
+              tooltip: 'Vérifier les categories',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context) =>
+                        ListCateg()
+                ));
+
+              },
+            ),
+            IconButton(
               icon: const Icon(Icons.settings_power),
               tooltip: 'Déconnexion',
               onPressed: () {
@@ -73,7 +95,7 @@ Widget build(BuildContext context) {
             child: Table(
               defaultColumnWidth: FixedColumnWidth(120.0),
               border: TableBorder.all(
-                color: Colors.green,
+                color: Color(0xff113945),
                 style: BorderStyle.solid,
                 width: 2
               ),

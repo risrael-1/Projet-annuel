@@ -17,6 +17,7 @@ void displayDialog(BuildContext context, String title, String text) =>
     );
 
 class MyApp extends StatelessWidget {
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
       },
       title: 'BenevOld',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blueGrey,
+        scaffoldBackgroundColor: const Color(0xFFBFE1EC),
       ),
       home: MyHomePage(title: 'BenevOld'),
     );
@@ -66,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text(
                       'Connexion',
                       style: TextStyle(
-                          color: Colors.green,
+                          color: Color(0xff113945),
                           fontWeight: FontWeight.w500,
                           fontSize: 30),
                     )),
@@ -78,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.fromLTRB(150, 30, 150, 20),
+                          padding: EdgeInsets.fromLTRB(400, 30, 400, 20),
                           child: TextFormField(
                             validator: (value) {
                               if (value.isEmpty) {
@@ -95,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(150, 10, 150, 20),
+                          padding: EdgeInsets.fromLTRB(400, 10, 400, 20),
                           child: TextFormField(
                             validator: (input) {
                               if (input.isEmpty) {
@@ -127,9 +129,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child: Center(
                         // ignore: deprecated_member_use
-                        child: RaisedButton(
+                        child: FlatButton(
                           textColor: Colors.white,
-                          color: Colors.green,
+                          color: Color(0xff113945),
                           child: Text('Valider'),
                           onPressed: () async {
                               Navigator.push(context, MaterialPageRoute(

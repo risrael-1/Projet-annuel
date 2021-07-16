@@ -16,7 +16,7 @@ class AddAdmin extends StatelessWidget {
       appBar: AppBar(
           automaticallyImplyLeading: false,
           centerTitle: true,
-          title: const Text('Vérification d\'annonces'),
+          title: const Text('Administration'),
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
             tooltip: 'Retour',
@@ -112,7 +112,7 @@ class AddAdmin extends StatelessWidget {
                   // ignore: deprecated_member_use
                   child: RaisedButton(
                     textColor: Colors.white,
-                    color: Colors.green,
+                    color: Color(0xff113945),
                     child: Text('Valider'),
                     onPressed: () async {
 
