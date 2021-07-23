@@ -1,6 +1,13 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
+import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:http/http.dart' as http;
 import 'home.dart';
+import 'services/apiService.dart';
+
+
+var loginUser;
 
 void main() {
   runApp(MyApp());
@@ -16,6 +23,18 @@ void displayDialog(BuildContext context, String title, String text) =>
           ),
     );
 
+Future<String> attemptLogIn(String email, String password) async {
+  var res = await http.post(
+      Uri.parse("https://benevold.herokuapp.com/flutter/signin/admin"),
+      body: {
+        "email": email,
+        "password": password
+      }
+  );
+  if(res.statusCode == 200) return res.body;
+    return null;
+}
+
 class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
@@ -30,7 +49,7 @@ class MyApp extends StatelessWidget {
       title: 'BenevOld',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
-        scaffoldBackgroundColor: const Color(0xFFBFE1EC),
+        scaffoldBackgroundColor: const Color(0xFFC7EAF6),
       ),
       home: MyHomePage(title: 'BenevOld'),
     );
@@ -73,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontSize: 30),
                     )),
                 Container(
-                  child: Image.asset('assets/images/benevold.png', height: 100),
+                  child: Image.asset('assets/images/LOGO_BENEVOLD.png', height: 100),
                 ),
                 Form(
                     key: _formKey,
@@ -128,17 +147,53 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 50,
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child: Center(
-                        // ignore: deprecated_member_use
-                        child: FlatButton(
+                        child: RaisedButton(
                           textColor: Colors.white,
-                          color: Color(0xff113945),
+                          color: Colors.blueGrey,
                           child: Text('Valider'),
                           onPressed: () async {
-                              Navigator.push(context, MaterialPageRoute(
-                                  builder: (context) =>
-                                      HomePage()
-                              ));
+                            if(nameController.text == "" || passwordController.text == ""){
+                              Fluttertoast.showToast(
+                                msg: "Veuillez renseigner tous les champs",
+                                timeInSecForIosWeb: 2,
+                              );
+                            }
+                            else {
+                              loginUser = nameController.text;
+                              ApiServices.login(
+                                  nameController.text, passwordController.text
+                              );
 
+
+                              String A = "Connexion échouée veuillez verifier vos identifiants" ;
+                              String B = "Connexion réussie" ;
+
+                              Timer(Duration(seconds: 1), () {
+
+                                var logsuccess = ApiServices.loginsuccess;
+
+                                // false pour tester avec des id bidons
+                                if (logsuccess){
+                                  Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) =>
+                                          HomePage(userToken: null, userAdmin: null)
+                                  ));
+                                  Fluttertoast.showToast(
+                                    msg: B ,
+                                    timeInSecForIosWeb: 2,
+                                  );
+                                } else {
+                                  Fluttertoast.showToast(
+                                    msg: A ,
+                                    timeInSecForIosWeb: 2,
+                                  );
+                                }
+
+
+                              });
+
+                            }
+                            //logIn(context, nameController, passwordController);
 
                           },
                         ),

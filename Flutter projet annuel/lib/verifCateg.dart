@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projet_annuel/categoryItems.dart';
+import 'package:flutter_projet_annuel/class/category.dart';
 import 'addAdmin.dart';
 import 'anounceVerif.dart';
+import 'class/user.dart';
 import 'home.dart';
+import 'services/apiService.dart';
 import 'usersVerif.dart';
 import 'adminList.dart';
 import 'addCateg.dart';
@@ -9,6 +13,10 @@ import 'addCateg.dart';
 
 
 class ListCateg extends StatelessWidget {
+  final User userAdmin;
+  final String userToken;
+
+  const ListCateg({Key key, this.userAdmin, this.userToken}) : super(key: key);
   @override
 
   Widget build(BuildContext context) {
@@ -17,7 +25,7 @@ class ListCateg extends StatelessWidget {
           automaticallyImplyLeading: false,
           centerTitle: true,
           title: const Text('Categorie'),
-          leading: Image.asset('assets/images/benevold.png', height: 40),
+          leading: Image.asset('assets/images/LOGO_BENEVOLD.png', height: 40),
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.home),
@@ -101,6 +109,54 @@ class ListCateg extends StatelessWidget {
               ));
             },
           ),
+          FutureBuilder(
+            future: ApiServices.getCategory(),
+            builder: (BuildContext context, AsyncSnapshot snapshot) {
+              switch (snapshot.connectionState) {
+                case ConnectionState.waiting:
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                  break;
+                case ConnectionState.done:
+                  if (snapshot.hasError) {
+                    return Center(
+                      child: Text("Error: ${snapshot.error}"),
+                    );
+                  }
+                  if (snapshot.hasData) {
+                    final List<Category> categories = snapshot.data;
+                    if (categories.isEmpty) {
+                      return Center(
+                        child: Text("Empty list"),
+                      );
+                    }
+                    return SizedBox(
+                      height: 1000,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(500, 50, 500, 0),
+                        child: ListView.builder(
+                          itemCount: categories.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            return CategoryItems(
+                              category: categories[index],
+                            );
+                          },
+                        ),
+                      ),
+                    );
+                  } else {
+                    return Center(
+                      child: Text("No data"),
+                    );
+                  }
+                  break;
+                default:
+                  return Container();
+                  break;
+              }
+            },
+          )
         ],
       ),
     );

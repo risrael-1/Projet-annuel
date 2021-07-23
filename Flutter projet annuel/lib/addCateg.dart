@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'services/apiService.dart';
 import 'verifCateg.dart';
 
 
@@ -71,8 +73,21 @@ class AddCateg extends StatelessWidget {
                     color: Color(0xff113945),
                     child: Text('Valider'),
                     onPressed: () async {
-
-
+                      if(nameController.text == ""){
+                        Fluttertoast.showToast(
+                          msg: "Veuillez renseigner tous les champs",
+                          timeInSecForIosWeb: 2,
+                        );
+                      }
+                      else {
+                        ApiServices.createCategory(
+                            nameController.text
+                        );
+                        Fluttertoast.showToast(
+                          msg: "Vous avez ajouté une categorie",
+                          timeInSecForIosWeb: 2,
+                        );
+                      }
                     },
                   ),
                 )),

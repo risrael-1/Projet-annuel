@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_projet_annuel/addAdmin.dart';
 import 'adminList.dart';
 import 'anounceVerif.dart';
+import 'class/user.dart';
 import 'main.dart';
 import 'usersVerif.dart';
 import 'verifCateg.dart';
 
 
 class HomePage extends StatelessWidget {
+  final User userAdmin;
+  final String userToken;
+
+  const HomePage({Key key, this.userAdmin, this.userToken}) : super(key: key);
   @override
 
 Widget build(BuildContext context) {
@@ -16,7 +21,7 @@ Widget build(BuildContext context) {
           automaticallyImplyLeading: false,
           centerTitle: true,
           title: const Text('Accueil'),
-          leading: Image.asset('assets/images/benevold.png', height: 20),
+          leading: Image.asset('assets/images/LOGO_BENEVOLD.png', height: 20),
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.home),
@@ -111,7 +116,7 @@ Widget build(BuildContext context) {
                 ),
                 TableRow(
                     children: [
-                      Column(children: [Text("42")]),
+                      Column(children: [Text("3")]),
                       Column(children: [Text("23")]),
                       Column(children: [Text("19")]),
                       Column(children: [Text("35")]),
@@ -125,3 +130,39 @@ Widget build(BuildContext context) {
       ),
     );
   }}
+
+
+// FutureBuilder(
+// future: ApiServices.getNewUsers(),
+// builder: (BuildContext context, AsyncSnapshot snapshot) {
+// switch (snapshot.connectionState) {
+// case ConnectionState.waiting:
+// return Center(
+// child: CircularProgressIndicator(),
+// );
+// break;
+// case ConnectionState.done:
+// if (snapshot.hasError) {
+// return Column(
+// children: [Text("Error: ${snapshot.error}")],
+// );
+// }
+// if (snapshot.hasData) {
+// print(snapshot.data);
+// final int newUsers = snapshot.data;
+// print(newUsers)
+// return Column(
+// children: [Text(newUsers.toString())]
+// );
+// } else {
+// return Column(
+// children: [Text("No data")],
+// );
+// }
+// break;
+// default:
+// return Container();
+// break;
+// }
+// },
+// ),

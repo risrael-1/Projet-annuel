@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'addAdmin.dart';
 import 'adminList.dart';
 import 'anounceVerif.dart';
+import 'class/profil.dart';
 import 'home.dart';
+import 'profileItems.dart';
+import 'services/apiService.dart';
 import 'verifCateg.dart';
 
 
@@ -15,7 +18,7 @@ class AccountVerif extends StatelessWidget {
           automaticallyImplyLeading: false,
           centerTitle: true,
           title: const Text('Vérification de comptes'),
-          leading: Image.asset('assets/images/benevold.png', height: 40),
+          leading: Image.asset('assets/images/LOGO_BENEVOLD.png', height: 40),
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.home),
@@ -89,6 +92,54 @@ class AccountVerif extends StatelessWidget {
               ),
             ),
           ),
+          FutureBuilder(
+            future: ApiServices.getProfil(),
+            builder: (BuildContext context, AsyncSnapshot snapshot) {
+              switch (snapshot.connectionState) {
+                case ConnectionState.waiting:
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                  break;
+                case ConnectionState.done:
+                  if (snapshot.hasError) {
+                    return Center(
+                      child: Text("Error: ${snapshot.error}"),
+                    );
+                  }
+                  if (snapshot.hasData) {
+                    final List<Profil> profiles = snapshot.data;
+                    if (profiles.isEmpty) {
+                      return Center(
+                        child: Text("Empty list"),
+                      );
+                    }
+                    return SizedBox(
+                      height: 1000,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(500, 50, 500, 0),
+                        child: ListView.builder(
+                          itemCount: profiles.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            return ProfilItems(
+                              profil: profiles[index],
+                            );
+                          },
+                        ),
+                      ),
+                    );
+                  } else {
+                    return Center(
+                      child: Text("No data"),
+                    );
+                  }
+                  break;
+                default:
+                  return Container();
+                  break;
+              }
+            },
+          )
         ],
       ),
     );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'adminList.dart';
-import 'home.dart';
-import 'usersVerif.dart';
+import 'services/apiService.dart';
 
 
 class AddAdmin extends StatelessWidget {
@@ -43,23 +43,6 @@ class AddAdmin extends StatelessWidget {
               key: _formKey,
               child: Column(
                 children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(150, 30, 150, 20),
-                    child: TextFormField(
-                      validator: (value) {
-                        if (value.isEmpty) {
-                          return 'Vous devez entrer un votre pseudo';
-                        }
-                        return null;
-                      },
-                      controller: nameController,
-
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Nom d\'utilisateur',
-                      ),
-                    ),
-                  ),
                   Padding(
                     padding: EdgeInsets.fromLTRB(150, 30, 150, 20),
                     child: TextFormField(
@@ -115,7 +98,22 @@ class AddAdmin extends StatelessWidget {
                     color: Color(0xff113945),
                     child: Text('Valider'),
                     onPressed: () async {
-
+                      if(mailController.text == "" && passwordController.text == ""){
+                        Fluttertoast.showToast(
+                          msg: "Veuillez renseigner tous les champs",
+                          timeInSecForIosWeb: 2,
+                        );
+                      }
+                      else {
+                        ApiServices.createAdmin(
+                            mailController.text,
+                            passwordController.text
+                        );
+                        Fluttertoast.showToast(
+                          msg: "Vous avez ajouté un admin",
+                          timeInSecForIosWeb: 2,
+                        );
+                      }
 
                     },
                   ),
