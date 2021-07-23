@@ -18,8 +18,12 @@
 		64839DFF26963199002951F9 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64839DFD26963199002951F9 /* MessageViewController.xib */; };
 		64839E142696389F002951F9 /* EditingProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64839E132696389E002951F9 /* EditingProfilViewController.swift */; };
 		64839E17269638B5002951F9 /* EditingProfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64839E16269638B5002951F9 /* EditingProfilViewController.xib */; };
-		64839E29269640FA002951F9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64839E28269640FA002951F9 /* HistoryViewController.swift */; };
-		64839E2C26964102002951F9 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64839E2B26964102002951F9 /* HistoryViewController.xib */; };
+		64839E412698D223002951F9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64839E3F2698D223002951F9 /* HistoryViewController.swift */; };
+		64839E422698D223002951F9 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64839E402698D223002951F9 /* HistoryViewController.xib */; };
+		64F5900E26AB4A72008DF13F /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5900C26AB4A72008DF13F /* ScreenViewController.swift */; };
+		64F5900F26AB4A72008DF13F /* ScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F5900D26AB4A72008DF13F /* ScreenViewController.xib */; };
+		64F5901326AB4D3D008DF13F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5901126AB4D3D008DF13F /* LoginViewController.swift */; };
+		64F5901426AB4D3D008DF13F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F5901226AB4D3D008DF13F /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +41,12 @@
 		64839DFD26963199002951F9 /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		64839E132696389E002951F9 /* EditingProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditingProfilViewController.swift; sourceTree = "<group>"; };
 		64839E16269638B5002951F9 /* EditingProfilViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditingProfilViewController.xib; sourceTree = "<group>"; };
-		64839E28269640FA002951F9 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = "../../../../dossier sans titre/HistoryViewController.swift"; sourceTree = "<group>"; };
-		64839E2B26964102002951F9 /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryViewController.xib; path = "../../../../dossier sans titre/HistoryViewController.xib"; sourceTree = "<group>"; };
+		64839E3F2698D223002951F9 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		64839E402698D223002951F9 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		64F5900C26AB4A72008DF13F /* ScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
+		64F5900D26AB4A72008DF13F /* ScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenViewController.xib; sourceTree = "<group>"; };
+		64F5901126AB4D3D008DF13F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		64F5901226AB4D3D008DF13F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		C2168F7DC0F732B4DD9BAFD7 /* Pods_IosProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,8 +102,12 @@
 				64839E16269638B5002951F9 /* EditingProfilViewController.xib */,
 				64839DFC26963199002951F9 /* MessageViewController.swift */,
 				64839DFD26963199002951F9 /* MessageViewController.xib */,
-				64839E28269640FA002951F9 /* HistoryViewController.swift */,
-				64839E2B26964102002951F9 /* HistoryViewController.xib */,
+				64839E3F2698D223002951F9 /* HistoryViewController.swift */,
+				64839E402698D223002951F9 /* HistoryViewController.xib */,
+				64F5900C26AB4A72008DF13F /* ScreenViewController.swift */,
+				64F5900D26AB4A72008DF13F /* ScreenViewController.xib */,
+				64F5901126AB4D3D008DF13F /* LoginViewController.swift */,
+				64F5901226AB4D3D008DF13F /* LoginViewController.xib */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -176,12 +188,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F5901426AB4D3D008DF13F /* LoginViewController.xib in Resources */,
 				64839DDD269630F3002951F9 /* Assets.xcassets in Resources */,
 				64839DFF26963199002951F9 /* MessageViewController.xib in Resources */,
+				64F5900F26AB4A72008DF13F /* ScreenViewController.xib in Resources */,
 				64839E17269638B5002951F9 /* EditingProfilViewController.xib in Resources */,
 				64839DEF26963135002951F9 /* HomeViewController.xib in Resources */,
 				64839DF526963174002951F9 /* CalendarViewController.xib in Resources */,
-				64839E2C26964102002951F9 /* HistoryViewController.xib in Resources */,
+				64839E422698D223002951F9 /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,10 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F5900E26AB4A72008DF13F /* ScreenViewController.swift in Sources */,
 				64839DF426963174002951F9 /* CalendarViewController.swift in Sources */,
 				64839DD4269630F2002951F9 /* AppDelegate.swift in Sources */,
 				64839E142696389F002951F9 /* EditingProfilViewController.swift in Sources */,
-				64839E29269640FA002951F9 /* HistoryViewController.swift in Sources */,
+				64F5901326AB4D3D008DF13F /* LoginViewController.swift in Sources */,
+				64839E412698D223002951F9 /* HistoryViewController.swift in Sources */,
 				64839DEE26963135002951F9 /* HomeViewController.swift in Sources */,
 				64839DFE26963199002951F9 /* MessageViewController.swift in Sources */,
 			);

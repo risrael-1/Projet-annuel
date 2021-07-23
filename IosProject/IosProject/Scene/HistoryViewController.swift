@@ -15,15 +15,29 @@ class HistoryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func homeButton(_ sender: Any) {
+        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(homeViewController, animated: true)
     }
-    */
-
+    
+    @IBAction func calendarButton(_ sender: Any) {
+        let calendarViewController = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(calendarViewController, animated: true)
+    }
+    
+    @IBAction func profilButton(_ sender: Any) {
+        let profilViewController = EditingProfilViewController(nibName: "EditingProfilViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(profilViewController, animated: true)
+    }
+    
+    @IBAction func messageButton(_ sender: Any) {
+        let messageViewController = MessageViewController(nibName: "MessageViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(messageViewController, animated: true)
+    }
+    
+    
 }
