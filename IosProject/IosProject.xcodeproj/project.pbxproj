@@ -24,6 +24,7 @@
 		64F5900F26AB4A72008DF13F /* ScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F5900D26AB4A72008DF13F /* ScreenViewController.xib */; };
 		64F5901326AB4D3D008DF13F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5901126AB4D3D008DF13F /* LoginViewController.swift */; };
 		64F5901426AB4D3D008DF13F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F5901226AB4D3D008DF13F /* LoginViewController.xib */; };
+		64F5901826AB5280008DF13F /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5901726AB5280008DF13F /* user.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		64F5900D26AB4A72008DF13F /* ScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenViewController.xib; sourceTree = "<group>"; };
 		64F5901126AB4D3D008DF13F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		64F5901226AB4D3D008DF13F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		64F5901726AB5280008DF13F /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		C2168F7DC0F732B4DD9BAFD7 /* Pods_IosProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		64839DD2269630F2002951F9 /* IosProject */ = {
 			isa = PBXGroup;
 			children = (
+				64F5901626AB5254008DF13F /* Model */,
 				64839DEB26963122002951F9 /* Scene */,
 				64839DD3269630F2002951F9 /* AppDelegate.swift */,
 				64839DDC269630F3002951F9 /* Assets.xcassets */,
@@ -110,6 +113,14 @@
 				64F5901226AB4D3D008DF13F /* LoginViewController.xib */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		64F5901626AB5254008DF13F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64F5901726AB5280008DF13F /* user.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77503DBA612EF2075ADEDA30 /* Pods */ = {
@@ -253,6 +264,7 @@
 				64839DD4269630F2002951F9 /* AppDelegate.swift in Sources */,
 				64839E142696389F002951F9 /* EditingProfilViewController.swift in Sources */,
 				64F5901326AB4D3D008DF13F /* LoginViewController.swift in Sources */,
+				64F5901826AB5280008DF13F /* user.swift in Sources */,
 				64839E412698D223002951F9 /* HistoryViewController.swift in Sources */,
 				64839DEE26963135002951F9 /* HomeViewController.swift in Sources */,
 				64839DFE26963199002951F9 /* MessageViewController.swift in Sources */,
