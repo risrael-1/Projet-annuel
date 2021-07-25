@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_projet_annuel/addAdmin.dart';
+import 'package:flutter_projet_annuel/class/message.dart';
+import 'package:flutter_projet_annuel/services/apiService.dart';
 import 'adminList.dart';
 import 'anounceVerif.dart';
 import 'class/user.dart';
-import 'main.dart';
+import 'message.dart';
 import 'usersVerif.dart';
 import 'verifCateg.dart';
 
 
 class HomePage extends StatelessWidget {
   final User userAdmin;
+  final Message message;
   final String userToken;
 
-  const HomePage({Key key, this.userAdmin, this.userToken}) : super(key: key);
+  const HomePage({Key key, this.userAdmin,this.message, this.userToken}) : super(key: key);
   @override
 
 Widget build(BuildContext context) {
@@ -90,10 +92,64 @@ Widget build(BuildContext context) {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
               child: Text(
-                'Tableau de bord :',
+                'Tableau de bord',
                 style: TextStyle(fontWeight: FontWeight.w500, fontSize: 25.0),
               ),
             ),
+          ),
+          FutureBuilder(
+            future: ApiServices.getMessage(),
+            builder: (BuildContext context, AsyncSnapshot snapshot) {
+              switch (snapshot.connectionState) {
+                case ConnectionState.waiting:
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                  break;
+                case ConnectionState.done:
+                  if (snapshot.hasError) {
+                    return Center(
+                      child: Text("Error: ${snapshot.error}"),
+                    );
+                  }
+                  if (snapshot.hasData) {
+                    final String message = snapshot.data;
+                    if (message == null) {
+                      return Center(
+                        child: Text("Empty list"),
+                      );
+                    }
+                    return Center(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(30, 50, 0, 0),
+                            child: Text(
+                              message,
+                              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 15.0),
+                            ),
+                          ),
+                    );
+                  } else {
+                    return Center(
+                      child: Text("No data"),
+                    );
+                  }
+                  break;
+                default:
+                  return Container();
+                  break;
+              }
+            },
+          ),
+
+          IconButton(
+              icon: const Icon(Icons.edit),
+              tooltip: 'Modifier le message du jour',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                    builder: (context) =>
+                        UpdateMessage()
+                ));
+              }
           ),
           Container(
             margin: EdgeInsets.all(40),

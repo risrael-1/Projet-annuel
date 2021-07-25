@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flutter_projet_annuel/class/message.dart';
 import 'package:flutter_projet_annuel/class/newUsers.dart';
 import 'package:flutter_projet_annuel/class/user.dart';
 
@@ -82,6 +83,28 @@ class ApiServices {
     AdminJSON adminJSON = AdminJSON.fromJson(jsonBody);
     return adminJSON.admins;
   }
+
+  static Future<String> getMessage() async {
+    final response =
+    //  await http.get("https://next.json-generator.com/api/json/get/VJX9FVx1F");
+
+    //  await http.get("https://webhook.site/93e4dd43-1476-4b9e-b94a-5660681be525");
+//    await http.get("http://localhost:3000/annonces/all");
+    await http.get(
+      Uri.parse('https://benevold.herokuapp.com/message'),
+      headers: <String, String>{
+        'Content-Type': 'application/json', 'access-token' : JWT
+      },
+    );
+    print(response.body);
+    if (response.statusCode != 200) {
+      throw Error();
+    }
+    final jsonBody = json.decode(response.body);
+    print(jsonBody);
+    return jsonBody["response"];
+  }
+
 
   static Future<List<Profil>> getProfil() async {
     final response =
@@ -167,6 +190,23 @@ class ApiServices {
       },
       body: jsonEncode(
           <String, dynamic>{'title': title}),
+    );
+
+    if (response.statusCode != 200) {
+      throw Error();
+    }
+  }
+
+  static Future<void> UpdateMessage(
+      String message) async {
+    final response = await http.post(
+      Uri.parse('https://benevold.herokuapp.com/flutter/message'),
+      // 'https://webhook.site/39c3d9a5-a5e1-451c-8bb0-8fe3775f89a1',
+      headers: <String, String>{
+        'Content-Type': 'application/json', 'access-token' : JWT
+      },
+      body: jsonEncode(
+          <String, dynamic>{'message': message}),
     );
 
     if (response.statusCode != 200) {

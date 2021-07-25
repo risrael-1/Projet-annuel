@@ -18,13 +18,17 @@ class ProfilItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var username = profil.username;
+    if(username == null) {
+      username = "";
+    }
     return SizedBox(
       height: 100,
       width: 600,
       child: RaisedButton(
         color: Colors.white,
         child: ListTile(
-          title: Text(profil.username + " " + profil.city ),
+          title: Text(username),
           subtitle: Text(
             "Créé le " + profil.createdAt + "\n"
             + "Numéro de téléphone : " + profil.telNumber + "\n"
