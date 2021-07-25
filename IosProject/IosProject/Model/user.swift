@@ -10,26 +10,28 @@ import Foundation
 
 class User: CustomStringConvertible {
     
-    var id: Int?
-    var username: String
-    var password: String
-    var city: String
-    var telNumber: String
-    var nom: String
-    var prenom: String
-    var age: String
+    var id: String?
+    var fullName: String
+    var phoneNumber: String?
+    var email: String
+    var createdAt: String
+    var type: String
+    var address: String?
+    var city: String?
+    var picLink: String?
     var description: String {
-        return "User [\(self.id ?? 0), \(self.username), \(self.password), \(self.city), \(self.telNumber), \(self.nom), \(self.prenom), \(self.age)]"
+        return "User [\(self.id ?? "") \(self.fullName), \(self.phoneNumber ?? ""), \(self.email), \(self.type), \(self.address ?? ""), \(self.city ?? "")]"
     }
     
-    public init(id: Int?, username: String, password: String, city: String, telNumber: String, nom: String, prenom: String, age: String) {
+    public init(id: String?, fullName: String, phoneNumber: String?, email: String, createdAt: String, type: String, address: String?, city: String?, picLink: String?) {
         self.id = id
-        self.username = username
-        self.password = password
+        self.fullName = fullName
+        self.phoneNumber = phoneNumber
+        self.email = email
+        self.createdAt = createdAt
+        self.type = type
+        self.address = address
         self.city = city
-        self.telNumber = telNumber
-        self.nom = nom
-        self.prenom = prenom
-        self.age = age
+        self.picLink = picLink
     }
 }

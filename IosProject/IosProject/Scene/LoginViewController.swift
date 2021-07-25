@@ -8,18 +8,33 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    var APISigninResponse: APISigninResponse? = nil
+    @IBOutlet weak var loginInput: UITextField!
+    @IBOutlet weak var passwordInput: UITextField!
+    var apiService: ApiService = ApiService()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    // TODO: appel api
-    @IBAction func connexionButton(_ sender: Any) {
-        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        
-        self.navigationController?.pushViewController(homeViewController, animated: true)
+    @IBAction func connectionPressed(_ sender: UIButton) {
+        self.apiService.signin(login: self.loginInput.text, password: self.passwordInput.text, completion: { (response) in
+            if (response!.success) {
+                DispatchQueue.main.sync {
+                    self.APISigninResponse = response
+                    let homeViewController = HomeViewController.newInstance(response: response!)
+                    
+                    self.navigationController?.pushViewController(homeViewController, animated: true)
+                }
+                
+            }else{
+                print("pas oK")
+                //alerte pas ok
+            }
+        })
     }
     
 
