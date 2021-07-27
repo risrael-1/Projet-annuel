@@ -1,16 +1,28 @@
 PODS:
+  - DynamicBlurView (4.1.0)
   - FSCalendar (2.8.2)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - FSCalendar
+  - PopupDialog (~> 1.1)
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
+    - DynamicBlurView
     - FSCalendar
+    - PopupDialog
+    - Toast-Swift
 
 SPEC CHECKSUMS:
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 860e6f3f340bda6a138317c66418eefc652a6e5c
+PODFILE CHECKSUM: 0d2686fe99a65b3f661fb5f98f442c9454dfbcf6
 
 COCOAPODS: 1.10.1

@@ -47,7 +47,6 @@ class ApiService {
             }
             
             let res = UserFactory.userFromDictionary(apiResponse.response)
-            print(res)
             completion(res)
         }
         task.resume() // Lance le telechargement
@@ -201,12 +200,13 @@ class ApiService {
             }
             
             // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
-            let annonceAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
-            guard let annonces = annonceAny as? [String:Any] else {
+            let userAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let user = userAny as? [String:Any] else {
                 completion(nil)
                 return
             }
-            guard let apiResponse = APISingleResponseFactory.responseFromElement(annonces) else {
+            print(user)
+            guard let apiResponse = APISingleResponseFactory.responseFromElement(user) else {
                 completion(nil)
                 return
             }
@@ -216,6 +216,257 @@ class ApiService {
         task.resume()
     }
     
+    public func getAnnonceInfos(token: String, annonceId: String, completion: @escaping (Annonce?) -> Void) -> Void {
+        
+        let headers = [
+            "access-token": token,
+            "Content-Type": "application/json"
+        ]
+        
+        guard let url = URL(string: "https://benevold.herokuapp.com/annonce") else {
+            completion(nil)
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = headers
+        let body = [
+            "annonce_id": annonceId
+        ]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        print(body)
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion(nil)
+                return
+                
+            }
+            
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let annonceAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let annonce = annonceAny as? [String:Any] else {
+                completion(nil)
+                return
+            }
+            guard let apiResponse = APISingleResponseFactory.responseFromElement(annonce) else {
+                completion(nil)
+                return
+            }
+            
+            let res = AnnonceFactory.annonceFromDict(apiResponse.response)
+            completion(res)
+        }
+        task.resume()
+    }
+    
+    public func getMessage(token: String, completion: @escaping (String) -> Void) -> Void {
+        
+        let headers = [
+            "access-token": token,
+            "Content-Type": "application/json"
+        ]
+        
+        guard let url = URL(string: "https://benevold.herokuapp.com/message") else {
+            completion("")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion("")
+                return
+                
+            }
+            
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let annonceAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let annonce = annonceAny as? [String:Any] else {
+                completion("")
+                return
+            }
+            guard let apiResponse = APIStringResponseFactory.responseFromElement(annonce) else {
+                completion("")
+                return
+            }
+            completion(apiResponse.response ?? "")
+        }
+        task.resume()
+    }
+    
+    public func setTakenBy(token: String, annonce_id: String, user_id: String, completion: @escaping (Bool) -> Void) -> Void {
+        
+        let headers = [
+            "access-token": token,
+            "Content-Type": "application/json"
+        ]
+        
+        guard let url = URL(string: "https://benevold.herokuapp.com/annonce/taken") else {
+            completion(false)
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.allHTTPHeaderFields = headers
+        let body = [
+            "annonce_id": annonce_id,
+            "user_id": user_id
+        ]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion(false)
+                return
+                
+            }
+            
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let apiResponseAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let apiResponses = apiResponseAny as? [String:Any] else {
+                completion(false)
+                return
+            }
+            guard let apiResponse = APIResponseFactory.responseFromElement(apiResponses) else {
+                completion(false)
+                return
+            }
+            completion(apiResponse.success)
+        }
+        task.resume()
+    }
+    
+    public func getAnnonceTakenByUserId(token: String, userId: String, completion: @escaping (Annonce?) -> Void) -> Void {
+        
+        let headers = [
+            "access-token": token,
+            "Content-Type": "application/json"
+        ]
+        
+        guard let url = URL(string: "https://benevold.herokuapp.com/annonce/taken/user?id=\(userId)") else {
+            completion(nil)
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion(nil)
+                return
+                
+            }
+            
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let userAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let user = userAny as? [String:Any] else {
+                completion(nil)
+                return
+            }
+            print(user)
+            guard let apiResponse = APISingleResponseFactory.responseFromElement(user) else {
+                completion(nil)
+                return
+            }
+            print(apiResponse)
+            let res = AnnonceFactory.annonceFromDict(apiResponse.response)
+            completion(res)
+        }
+        task.resume()
+    }
+    
+    public func countAnnoncesByDateAndTakenBy(token: String, date: String, completion: @escaping (Int) -> Void) -> Void {
+        
+        let headers = [
+            "access-token": token,
+            "Content-Type": "application/json"
+        ]
+        
+        guard let url = URL(string: "https://benevold.herokuapp.com/flutter/count/annonces/taken/user/date?date=\(date)") else {
+            completion(0)
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion(0)
+                return
+                
+            }
+            
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let userAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let user = userAny as? [String:Any] else {
+                completion(0)
+                return
+            }
+            print(user)
+            guard let apiResponse = APIIntegerResponseFactory.responseFromElement(user) else {
+                completion(0)
+                return
+            }
+            completion(apiResponse.response ?? 0)
+        }
+        task.resume()
+    }
+    
+    public func getAnnoncesByTakenAndDate(token: String, date: String, completion: @escaping ([Annonce]) -> Void) -> Void {
+        
+        let headers = [
+            "access-token": token,
+            "Content-Type": "application/json"
+        ]
+        
+        guard let url = URL(string: "https://benevold.herokuapp.com/annonces/taken/user/date?date=\(date)") else {
+            completion([])
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion([])
+                return
+                
+            }
+            
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let annonceAny = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let annonces = annonceAny as? [String:Any] else {
+                completion([])
+                return
+            }
+            guard let apiResponse = APIMultipleResponseFactory.responseFromElement(annonces) else {
+                completion([])
+                return
+            }
+            print(apiResponse)
+            let res = apiResponse.response.compactMap(AnnonceFactory.annonceFromDict(_:))
+            completion(res)
+        }
+        task.resume()
+    }
 }
 
 

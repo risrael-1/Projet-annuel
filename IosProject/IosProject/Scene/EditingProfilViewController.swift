@@ -45,16 +45,13 @@ class EditingProfilViewController: UIViewController {
         self.navigationController?.pushViewController(calendarViewController, animated: true)
     }
     
-    @IBAction func messageButton(_ sender: Any) {
-        let messageViewController = MessageViewController.newInstance(response: APISigninResponse)
-        
-        self.navigationController?.pushViewController(messageViewController, animated: true)
-    }
-    
-    @IBAction func historyButton(_ sender: Any) {
+    @IBAction func annoncesButton(_ sender: UIButton) {
         let historyViewController = HistoryViewController.newInstance(response: APISigninResponse)
         
         self.navigationController?.pushViewController(historyViewController, animated: true)
+    }
+    
+    @IBAction func contactButton(_ sender: UIButton) {
     }
     private func fetchAndReloadImageView(){
         

@@ -25,7 +25,7 @@ class HistoryViewController: UIViewController {
         super.viewDidLoad()
         
         self.annonceListTableView.dataSource = self
-//        self.annonceListTableView.delegate = self
+        self.annonceListTableView.delegate = self
 
     }
     
@@ -47,6 +47,8 @@ class HistoryViewController: UIViewController {
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
     
+    @IBAction func contactButton(_ sender: UIButton) {
+    }
     @IBAction func calendarButton(_ sender: Any) {
         let calendarViewController = CalendarViewController.newInstance(response: APISigninResponse)
         
@@ -57,12 +59,6 @@ class HistoryViewController: UIViewController {
         let profilViewController = EditingProfilViewController.newInstance(response: APISigninResponse)
         
         self.navigationController?.pushViewController(profilViewController, animated: true)
-    }
-    
-    @IBAction func messageButton(_ sender: Any) {
-        let messageViewController = MessageViewController.newInstance(response: APISigninResponse)
-        
-        self.navigationController?.pushViewController(messageViewController, animated: true)
     }
     
     
@@ -93,10 +89,10 @@ extension HistoryViewController: UITableViewDataSource {
     }
 }
 
-//extension HistoryViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let annonce = self.annonces[indexPath.row] // recuperer le café à la bonne ligne
-//        let controller = HistoryViewController.newInstance(match: match)
-//        self.navigationController?.pushViewController(controller, animated: true)
-//    }
-//}
+extension HistoryViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let annonce = self.annonces[indexPath.row] // recuperer le café à la bonne ligne
+        let controller = AnnonceDetailViewController.newInstance(response: APISigninResponse, annonceId: annonce.id ?? "")
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+}
