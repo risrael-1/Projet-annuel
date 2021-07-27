@@ -31,15 +31,17 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre Nom complet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l96-Aj-OaZ">
+                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre Nom complet" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l96-Aj-OaZ">
                             <rect key="frame" x="186" y="477.5" width="463" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJx-Jn-jXN">
+                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJx-Jn-jXN">
                             <rect key="frame" x="186" y="708" width="463" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="send" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
@@ -84,12 +86,7 @@
                     <color key="backgroundColor" red="0.064840200000000001" green="0.22277728229999999" blue="0.26985760120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="vrc-Rk-EeJ" firstAttribute="centerX" secondItem="rhL-3n-jQm" secondAttribute="centerX" id="3ah-yW-Ewf"/>
-                        <constraint firstItem="DJx-Jn-jXN" firstAttribute="leading" secondItem="OYt-Uv-y17" secondAttribute="leading" constant="186" id="AkC-3k-gH2"/>
-                        <constraint firstItem="OYt-Uv-y17" firstAttribute="trailing" secondItem="DJx-Jn-jXN" secondAttribute="trailing" constant="185" id="RSr-Tg-hpx"/>
                         <constraint firstItem="vrc-Rk-EeJ" firstAttribute="top" secondItem="OYt-Uv-y17" secondAttribute="top" constant="207" id="UD4-D9-UND"/>
-                        <constraint firstItem="OYt-Uv-y17" firstAttribute="trailing" secondItem="l96-Aj-OaZ" secondAttribute="trailing" constant="185" id="V2w-9v-rSi"/>
-                        <constraint firstItem="l96-Aj-OaZ" firstAttribute="leading" secondItem="OYt-Uv-y17" secondAttribute="leading" constant="186" id="Vli-xG-76J"/>
-                        <constraint firstItem="DJx-Jn-jXN" firstAttribute="top" secondItem="l96-Aj-OaZ" secondAttribute="bottom" constant="191.5" id="YWP-nR-D37"/>
                     </constraints>
                 </view>
             </subviews>

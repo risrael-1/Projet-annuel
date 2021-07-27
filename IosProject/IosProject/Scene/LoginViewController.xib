@@ -25,15 +25,17 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre identifiant" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6K-zF-rnO">
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre identifiant" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6K-zF-rnO">
                     <rect key="frame" x="186" y="578" width="463" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <textInputTraits key="textInputTraits" textContentType="email"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWQ-ud-WZ0">
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWQ-ud-WZ0">
                     <rect key="frame" x="186" y="706.5" width="463" height="38.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <textInputTraits key="textInputTraits" textContentType="password"/>
@@ -50,8 +52,9 @@
                         <action selector="connectionPressed:" destination="-1" eventType="touchUpInside" id="XON-RN-RHu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSw-BM-gzs">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSw-BM-gzs">
                     <rect key="frame" x="324" y="767" width="186" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Mot de Passe oublié?">
                         <color key="titleColor" red="0.75085514779999996" green="0.88167780640000004" blue="0.92549854519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -81,13 +84,6 @@
             <color key="backgroundColor" red="0.064840200000000001" green="0.22277728229999999" blue="0.26985760120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Kr1-RA-aDh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2gM-3k-tAy"/>
-                <constraint firstItem="bSw-BM-gzs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QSr-uq-dqs"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lWQ-ud-WZ0" secondAttribute="trailing" constant="185" id="Zfj-dN-uKe"/>
-                <constraint firstItem="lWQ-ud-WZ0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186" id="aOV-o8-Rnj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I6K-zF-rnO" secondAttribute="trailing" constant="185" id="evv-q8-kAh"/>
-                <constraint firstItem="I6K-zF-rnO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186" id="fcU-7n-wNz"/>
-                <constraint firstItem="bSw-BM-gzs" firstAttribute="top" secondItem="lWQ-ud-WZ0" secondAttribute="bottom" constant="22" id="m8F-Y7-z3p"/>
-                <constraint firstItem="lWQ-ud-WZ0" firstAttribute="top" secondItem="I6K-zF-rnO" secondAttribute="bottom" constant="89.5" id="n4Z-UL-OUp"/>
                 <constraint firstItem="Kr1-RA-aDh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="207" id="wSV-Mc-nnJ"/>
             </constraints>
             <point key="canvasLocation" x="132.37410071942446" y="88.94472361809045"/>
