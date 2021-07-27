@@ -23,7 +23,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var annoncesTableView: UITableView!
     
-    static func newInstance(response: APISigninResponse) -> CalendarViewController {
+    static func newInstance(response: APISigninResponse?) -> CalendarViewController {
         let controller = CalendarViewController()
         controller.APISigninResponse = response
         return controller
@@ -31,6 +31,13 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (self.APISigninResponse == nil) {
+            let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            
+            self.navigationController?.pushViewController(loginViewController, animated: true)
+        }
+        
         let today = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = self.dateFormat
@@ -75,7 +82,7 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
     }
 
     @IBAction func HomeButton(_ sender: Any) {
-        let homeViewController = HomeViewController.newInstance(response: APISigninResponse)
+        let homeViewController = HomeViewController.newInstance(response: APISigninResponse, from: nil)
         
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
@@ -92,6 +99,10 @@ class CalendarViewController: UIViewController, FSCalendarDelegate {
         self.navigationController?.pushViewController(historyViewController, animated: true)
     }
     @IBAction func contactButton(_ sender: UIButton) {
+        
+        let contactViewController = ContactUsViewController.newInstance(response: APISigninResponse)
+        
+        self.navigationController?.pushViewController(contactViewController, animated: true)
     }
 }
 
@@ -122,7 +133,7 @@ extension CalendarViewController: UITableViewDataSource {
 extension CalendarViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let annonce = self.annonces[indexPath.row] // recuperer le café à la bonne ligne
-        let controller = AnnonceDetailViewController.newInstance(response: APISigninResponse, annonceId: annonce.id ?? "")
+        let controller = AnnonceDetailViewController.newInstance(response: APISigninResponse, annonceId: annonce.id ?? "", from: "calendarController")
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }

@@ -19,30 +19,27 @@
             <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr1-RA-aDh">
-                    <rect key="frame" x="294" y="207" width="247" height="122"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr1-RA-aDh">
+                    <rect key="frame" x="350" y="207" width="134" height="68.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="57"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre identifiant" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6K-zF-rnO">
-                    <rect key="frame" x="186" y="529" width="463" height="39"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre identifiant" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6K-zF-rnO">
+                    <rect key="frame" x="186" y="578" width="463" height="39"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <textInputTraits key="textInputTraits" textContentType="email"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWQ-ud-WZ0">
-                    <rect key="frame" x="186" y="678" width="463" height="39"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Indiquez votre mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWQ-ud-WZ0">
+                    <rect key="frame" x="186" y="706.5" width="463" height="38.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <textInputTraits key="textInputTraits" textContentType="password"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCA-yF-PNV">
-                    <rect key="frame" x="334" y="869" width="167" height="69"/>
+                    <rect key="frame" x="343" y="889" width="149" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.14223630740000001" green="0.37049084160000001" blue="0.44406979590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -53,10 +50,50 @@
                         <action selector="connectionPressed:" destination="-1" eventType="touchUpInside" id="XON-RN-RHu"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSw-BM-gzs">
+                    <rect key="frame" x="324" y="767" width="186" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Mot de Passe oublié?">
+                        <color key="titleColor" red="0.75085514779999996" green="0.88167780640000004" blue="0.92549854519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="onForgottenPasswordPressed:" destination="-1" eventType="touchUpInside" id="ofm-ga-KTk"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO_BENEVOLD" translatesAutoresizingMaskIntoConstraints="NO" id="tdf-0S-wUl">
+                    <rect key="frame" x="279" y="311" width="277" height="233"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAn-82-cIX">
+                    <rect key="frame" x="540" y="889" width="134" height="57"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.75085514779999996" green="0.88167780640000004" blue="0.92549854519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Inscription">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSignupPressed:" destination="-1" eventType="touchUpInside" id="Zyd-za-3WD"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.064840200000000001" green="0.22277728229999999" blue="0.26985760120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kr1-RA-aDh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2gM-3k-tAy"/>
+                <constraint firstItem="bSw-BM-gzs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QSr-uq-dqs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lWQ-ud-WZ0" secondAttribute="trailing" constant="185" id="Zfj-dN-uKe"/>
+                <constraint firstItem="lWQ-ud-WZ0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186" id="aOV-o8-Rnj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I6K-zF-rnO" secondAttribute="trailing" constant="185" id="evv-q8-kAh"/>
+                <constraint firstItem="I6K-zF-rnO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186" id="fcU-7n-wNz"/>
+                <constraint firstItem="bSw-BM-gzs" firstAttribute="top" secondItem="lWQ-ud-WZ0" secondAttribute="bottom" constant="22" id="m8F-Y7-z3p"/>
+                <constraint firstItem="lWQ-ud-WZ0" firstAttribute="top" secondItem="I6K-zF-rnO" secondAttribute="bottom" constant="89.5" id="n4Z-UL-OUp"/>
+                <constraint firstItem="Kr1-RA-aDh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="207" id="wSV-Mc-nnJ"/>
+            </constraints>
             <point key="canvasLocation" x="132.37410071942446" y="88.94472361809045"/>
         </view>
     </objects>
+    <resources>
+        <image name="LOGO_BENEVOLD" width="2323" height="2322"/>
+    </resources>
 </document>

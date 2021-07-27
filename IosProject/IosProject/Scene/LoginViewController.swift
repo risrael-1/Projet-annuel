@@ -16,6 +16,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.passwordInput.isSecureTextEntry = true
 
         // Do any additional setup after loading the view.
     }
@@ -25,17 +27,30 @@ class LoginViewController: UIViewController {
             if (response!.success) {
                 DispatchQueue.main.sync {
                     self.APISigninResponse = response
-                    let homeViewController = HomeViewController.newInstance(response: response!)
+                    let homeViewController = HomeViewController.newInstance(response: response!, from: "login")
                     
                     self.navigationController?.pushViewController(homeViewController, animated: true)
                 }
                 
             }else{
-                print("pas oK")
-                //alerte pas ok
+                DispatchQueue.main.sync {
+                    Toast.makeErrorToast(text: "Veuillez vérifier vos identifiants de connexion", view: self.view)
+                }
+                
             }
         })
     }
     
-
+    @IBAction func onSignupPressed(_ sender: UIButton) {
+        
+        let controller = SignupViewController(nibName: "SignupViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBAction func onForgottenPasswordPressed(_ sender: UIButton) {
+        let controller = ForgottenPasswordViewController(nibName: "ForgottenPasswordViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }

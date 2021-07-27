@@ -1,12 +1,16 @@
 PODS:
   - DynamicBlurView (4.1.0)
   - FSCalendar (2.8.2)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - PopupDialog (1.1.1):
     - DynamicBlurView (~> 4.0)
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - FSCalendar
+  - NVActivityIndicatorView
   - PopupDialog (~> 1.1)
   - Toast-Swift (~> 5.0.1)
 
@@ -14,15 +18,17 @@ SPEC REPOS:
   trunk:
     - DynamicBlurView
     - FSCalendar
+    - NVActivityIndicatorView
     - PopupDialog
     - Toast-Swift
 
 SPEC CHECKSUMS:
   DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 0d2686fe99a65b3f661fb5f98f442c9454dfbcf6
+PODFILE CHECKSUM: 61a4d9873930f44dfd57fd18249f8212fe53b53b
 
 COCOAPODS: 1.10.1

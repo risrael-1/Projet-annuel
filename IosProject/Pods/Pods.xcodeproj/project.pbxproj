@@ -8,114 +8,163 @@
 
 /* Begin PBXBuildFile section */
 		012291873B9D5CA8B901B972F3614D44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */; };
-		019475E72F433C3E51895A3CD999822F /* CaptureQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD9968067104B8BAD96AA10CCDD9EC3 /* CaptureQuality.swift */; };
-		0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A766631D2D57B5241735F08711E4B21D /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C1470FED8904C9BC05B5296105434 /* FSCalendarDelegationFactory.m */; };
-		0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF518C821CCCF6DD94E2E3CD06A940D /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C507625FC1CE21BE3C1A6C31FD9A8E /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 47673E0FD76A38E1D6EA70C51965C91D /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B8B6D4315B7CE7E73AA669A5708F9 /* FSCalendarSeparatorDecorationView.m */; };
-		18643D4F9BC327B1E5B9175F4260AC0E /* DynamicBlurView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F8BE3F30150A613A575FDBB42C5AE3 /* DynamicBlurView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19C4DC14CC713DC68F954B6CC2F38DE7 /* DynamicBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEADDDFF12FB395B47DC50D3AD6EFA /* DynamicBlurView.swift */; };
-		1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AFFE2D03A3B3C5909BC908E2C0A15F /* FSCalendarExtensions.m */; };
-		1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB2447A13E39F9B11F5002F95065872 /* FSCalendarStickyHeader.m */; };
-		1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 669F92D394D97FA554DA0F9507EC1CB2 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE6A6DA7816B3D2A6BB362AA2966FE6 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1B9A7F0E580939CCE764BFDC639264 /* FSCalendar-dummy.m */; };
-		232D4AAA4FDC92BEB08E94C1BCC2B17A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */; };
-		26C03E82C5E055544B67EFE27CF276F3 /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E61A2FFFD1DFED05D625B7DCBF6C4 /* PopupDialogOverlayView.swift */; };
-		2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 54757F476D6481380BCEC93EF81A0EE3 /* FSCalendarConstants.m */; };
-		303898D9A1F232CB589A514C4EFFD644 /* CGContext+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F643512C72B9035958CFD1BBE1311FB /* CGContext+CGImage.swift */; };
-		32C270821912999C3C7A91FB966C7224 /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD1DFF10F3CF4BC53D569BACD7E33B /* PopupDialog+Keyboard.swift */; };
-		36DDF8F8C2F2981F84DEE769CD299AB8 /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB9AD3B58F7F0CBF7034D0832207E60 /* PopupDialogDefaultViewController.swift */; };
-		37B464DA33104653FA64ACDD691F8A5F /* DynamicBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F10D9F1BCA96D92E1BD3B4EB460423 /* DynamicBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AE4290A3133BED374DD94485944129 /* FSCalendarWeekdayView.m */; };
-		438F85B7EA16D3EAF55167DE264C506C /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A068BBD8688EAE62A7F6AB95F9C86650 /* PopupDialog-dummy.m */; };
-		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845AC5A3AEBEE3A7050E8841F960C94F /* Toast.swift */; };
-		487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F54949FFC7FDABC1A928B88DE75C74A /* FSCalendarCollectionViewLayout.m */; };
-		48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D530B3183E5659FFE4343D7CC05B1A /* FSCalendarDelegationProxy.m */; };
-		4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD24D1FCD7E670E572E7B916B430FB2 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D545E2A76DEE24D0800FFAB2B3E102 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC139F0FDD8900F4031734BC372786A /* FSCalendarCell.m */; };
-		52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B44A0051B8A437E5BB3A4B81D73FA4 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		525C077D7F70247B5513CF14F7185B29 /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD31424F7D1304F0F6E25856A19E0E8 /* PopupDialogContainerView.swift */; };
-		535CD4014DCA990CEE8A4783486170FB /* TrackingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BD19BA59DA1537DB7BE480054472C /* TrackingMode.swift */; };
-		58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = E5DBA7F25AFC827FBF006171589575AD /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		019475E72F433C3E51895A3CD999822F /* CaptureQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5E0F80566F42E6B643EF31AC3018E /* CaptureQuality.swift */; };
+		0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 827F65777C6076285B0178E7E22991D8 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2DF7465CFEF42F5D8E44A0EBA9C432 /* FSCalendarDelegationFactory.m */; };
+		0856B93E699B588BA71FE0CE044095E4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AAE3FA6C8BD4F62FFA18EEA337419 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D781AFB70CA97F1375441ECE1743D3 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3605E47F57D5F4E66F0B34B6F3225D /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C57FAEAB0553BEE9BF05E7A0A8858B /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19579B8BBDAEE64D948FBD4E342F4D97 /* FSCalendarSeparatorDecorationView.m */; };
+		1792253FB4C2C25168FA2152DD8DF0C2 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7922B2A0249D91B29B30A0ACCDD1761E /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
+		18643D4F9BC327B1E5B9175F4260AC0E /* DynamicBlurView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF73BFD78F2ECA8B2064BC0126F1C7D1 /* DynamicBlurView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19C4DC14CC713DC68F954B6CC2F38DE7 /* DynamicBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF6F63752B8FBE39267953F979A3674 /* DynamicBlurView.swift */; };
+		1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF84F94CD3582091DE575EC723CFA45 /* FSCalendarExtensions.m */; };
+		1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A4541FE310EDC2E5D41B88696BE15C1F /* FSCalendarStickyHeader.m */; };
+		1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C0F6835B8C5B40E7D69D995BD808FF /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75070E89ADA76FEC20C8ACD14F061A40 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FD15B6376D106639D90BFAD388947F /* FSCalendar-dummy.m */; };
+		22F67B17DFA4F0A721137347695646AF /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598259C3C54A05DE24F3F043D9E0F14 /* NVActivityIndicatorAnimationPacman.swift */; };
+		26C03E82C5E055544B67EFE27CF276F3 /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CBEF469B66F8113573403711904D8 /* PopupDialogOverlayView.swift */; };
+		2A44D897511EF2E554A26B4CE0ADF791 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A57E60D9E35CAAE250DD7959E40CE /* NVActivityIndicatorAnimationBallZigZag.swift */; };
+		2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA7BEF52C76051A9C1F6916EE9EE278 /* FSCalendarConstants.m */; };
+		2F0A0F0D1EF11FF26081AB85B924BAF9 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA46D7BDF0A65BB81C6DEA6CB87A84D /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
+		2F99F6A552F39A0791C59F67304C3649 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781884820EFAE04BF09B8F799120483C /* UIKit.framework */; };
+		303898D9A1F232CB589A514C4EFFD644 /* CGContext+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DCE377033B6CD08F93973A3D204397 /* CGContext+CGImage.swift */; };
+		32C270821912999C3C7A91FB966C7224 /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE172B05CC5CB9C3AB479CB461B070F /* PopupDialog+Keyboard.swift */; };
+		3519EA46150EFDC342809478BB460764 /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C5B1801F2DD32A73EDA6E94BF07A36 /* NVActivityIndicatorAnimationBlank.swift */; };
+		35E05B3DDE11B0EC42452E2D956F8632 /* NVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73746FEA8AE9787972F418C16680D7C6 /* NVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36DDF8F8C2F2981F84DEE769CD299AB8 /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34212E4ACD104AFE47ADA45FAE1944F /* PopupDialogDefaultViewController.swift */; };
+		37B464DA33104653FA64ACDD691F8A5F /* DynamicBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B5CCD08BC04492995E66F6C5EB06492 /* DynamicBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39F6F08BA69383C4F45C9E2DB5247AB9 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3761437C002972F1030CA501B047E8EE /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461081AF168142B5798B85900A6ED37 /* FSCalendarWeekdayView.m */; };
+		438F85B7EA16D3EAF55167DE264C506C /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE71D90F863B296876569693A6DDE /* PopupDialog-dummy.m */; };
+		46CE037FE4D8E73482B4F9062F041040 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D79E903B1333E67C11E2C50380D9040 /* NVActivityIndicatorAnimationOrbit.swift */; };
+		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F1E6EDA38517F19A90987F26A55AD /* Toast.swift */; };
+		47D5EA35A5F04B05BF8CE8926B4561CE /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543418994AACC9A1BC47598474DFFAFC /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B1E06F1454283583C90FA1D58C2562 /* FSCalendarCollectionViewLayout.m */; };
+		48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F3BD40F708A5C69184F716757B4211 /* FSCalendarDelegationProxy.m */; };
+		4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC8BA96AF1938AE121D0169B5F8DA5A /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ED716471FFC2F349629B5183F30B8E /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D229AC512795423039170962BA5B23A /* FSCalendarCell.m */; };
+		4D342EA223226DB27B6A1A049F35ACE2 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3262FFBAD2D75ADBAF906158DA16F42 /* NVActivityIndicatorAnimationBallRotate.swift */; };
+		5143B2CFD406F5A2CDCF928590213ACC /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075ACBDA9DE698025730B1F404AECAC /* NVActivityIndicatorAnimationBallPulse.swift */; };
+		52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECB71B481D19A7487C12D7D23FF3CE1 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		525C077D7F70247B5513CF14F7185B29 /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24803B0BA2D34C0D415F5126A7159514 /* PopupDialogContainerView.swift */; };
+		535CD4014DCA990CEE8A4783486170FB /* TrackingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A72C7BEEF0F6BF51BAAE8DFA70D20 /* TrackingMode.swift */; };
+		58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 0187C2C2E6872B24752E6238B32C5467 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BA2C9718F094CF84BCF2736E355ED1F /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2CDE6FF98D509E4EFB426139D928F8 /* NVActivityIndicatorView.swift */; };
 		661E67E04D1730FA2C2933A94462B947 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */; };
-		68C4FD1266866FE77A042EE7094D4C03 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942F0AA2DC22F59A917A3EE2C9B9703 /* PresentationController.swift */; };
-		6A58C323F66AA3D3CB42D72E299550D6 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DADAAE052EB759430BAFB6AEBE1690 /* TransitionAnimator.swift */; };
-		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F39AA7E48144B2EE6AED3F2394016 /* Toast-Swift-dummy.m */; };
-		6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313F596BCA69B7CB27BFCD91615EE6A /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D69918044736596E2F437DBEED2EB5E /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FAF15817DD196CF0046A8B40400C2C /* UIView+Animations.swift */; };
-		6DE2DEA2DD2A27B0D6F4D05F61DAC1DF /* UIImageView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62162C22C62B8FE2921A3CE6EC6B72C8 /* UIImageView+Calculations.swift */; };
+		663C075508F804454D38C145A77F8313 /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B25380E5BCDDB9C55CFA3803D7D514 /* NVActivityIndicatorAnimationLineScale.swift */; };
+		68C4FD1266866FE77A042EE7094D4C03 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E387C75EF20D9D8164E3CD4E38E16E03 /* PresentationController.swift */; };
+		69076D8F9549252BE319EAE1551344F2 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30DA198A2EB52E3CC63B00E99D971EC /* NVActivityIndicatorAnimationDelegate.swift */; };
+		6A58C323F66AA3D3CB42D72E299550D6 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2988B8EBE52DB1340DBDAF68E50E323C /* TransitionAnimator.swift */; };
+		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5342D7A60893F3A7D754952F95F25F /* Toast-Swift-dummy.m */; };
+		6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B61F94DA8147FD3DA424A985DF0625 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D69918044736596E2F437DBEED2EB5E /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A4943CE507356A7682077DFB243295 /* UIView+Animations.swift */; };
+		6DE2DEA2DD2A27B0D6F4D05F61DAC1DF /* UIImageView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B513355BE114EC0C491E4EC59C74904B /* UIImageView+Calculations.swift */; };
+		6F833200EFC8C5B6FDC287573A7A6E80 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D04041756DAFD5BFA5137377A7BC25 /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
 		753C8C42CEFBED94E1F1E752955F0254 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */; };
-		75B081637A2D9EDF51567FDACFFF2993 /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486AC3B6FA76364F0C2E7A00E13E05A5 /* TransitionAnimations.swift */; };
-		75DC9D516C917823DE6F9DC515166517 /* Pods-IosProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F41BC6B6FD64479B492CC1F379280EC8 /* Pods-IosProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A4B858FF97A66348DD7155FFCB88C /* FSCalendar.m */; };
-		7EBE128BBA4CC34DBF4853B1E747C724 /* DynamicBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCECA57523A9A004FA58F06B41C32B0C /* DynamicBlurView-dummy.m */; };
-		7FF0649D3237A34599DA73541656009B /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66864E6671AE57A246330BA9A9AA90D7 /* UIImage+Blur.swift */; };
-		8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BFB068CCE3D63E4F9753F6393F5300 /* FSCalendarAppearance.m */; };
-		8686AF915EEA548BC0F7ED45EAFF779A /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E73489447F97B139B3FAF66824437 /* PopupDialogDefaultView.swift */; };
-		8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0837B9FF83965C48195D09F4E57A3CA0 /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75B081637A2D9EDF51567FDACFFF2993 /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D629256D03B34D9016756B648CEAC /* TransitionAnimations.swift */; };
+		7C863C610C547CE943935738F9EB2DA9 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26150D42F313B0C532602B7BBDFEB009 /* NVActivityIndicatorShape.swift */; };
+		7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 47073552A54741863AA9034FA0FF5C26 /* FSCalendar.m */; };
+		7EBE128BBA4CC34DBF4853B1E747C724 /* DynamicBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE199F1CE0F1B5552018B570A0C9DA14 /* DynamicBlurView-dummy.m */; };
+		7FF0649D3237A34599DA73541656009B /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80123A61952E47799EECEED4C2C4C7F7 /* UIImage+Blur.swift */; };
+		8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 332305FE394DCC834709D32F1E46021D /* FSCalendarAppearance.m */; };
+		8686AF915EEA548BC0F7ED45EAFF779A /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88B309E29EF033A596A648D423A79D0 /* PopupDialogDefaultView.swift */; };
+		8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7722D028B4E0F5D75C5B0691E43E0E /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C9EA40E0D8CA71A5D098D7C4AB05FDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781884820EFAE04BF09B8F799120483C /* UIKit.framework */; };
-		919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A233A5DF3D441BA526E7A000E418FE4 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E24A4048DE84144E1A720F0810C107 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EF1CB45ED6FC85ECC3D163CFFC599C4 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3881DFF6CECCCEBE8945315D26B800 /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
+		919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FB35DE1E11EEBC5AF0D90C30F00010 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9620A4E08E98E2A121E3190D48873738 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93D3B2EC7BAD20C4F2269A79F8FF972B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781884820EFAE04BF09B8F799120483C /* UIKit.framework */; };
-		9A4B4A524409A4AB282AB01575AE906E /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00804678DB1F19862C0B63C465525E25 /* InteractiveTransition.swift */; };
-		9CA9511B8806093BE9D8CA4815502463 /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9236581A17883A69080E74BC53DB576B /* PopupDialogDefaultButtons.swift */; };
-		9CB73C2028D1E16DFE87289362792A4F /* CGImage+Accelerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1B7A4A4FA24A33452D4EBEF2C4351 /* CGImage+Accelerate.swift */; };
-		AFF14C24018C6BCA2D9311DF895DFC9E /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2772BA1307B1772EAD9F5B335625D /* UIViewController+Visibility.swift */; };
-		B3698D746CD48BF2FFDD6A418392B634 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A074EEEAEA08F340D6C096C8032162 /* PopupDialog.swift */; };
+		963602F41BAC27D5DC81FEBD6986BA39 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F4C77E91DC00CEFFF66D52E321E54 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		9750808FCEAC99C25DE17DA51F113A49 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941666C1CEA63E2E084F833ECF34CA06 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
+		976D24E52A2150A133B9767DFCF94AEE /* Pods-IosProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F41BC6B6FD64479B492CC1F379280EC8 /* Pods-IosProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A4B4A524409A4AB282AB01575AE906E /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CD45FFBCEB75B491FE8DB3E4B0670 /* InteractiveTransition.swift */; };
+		9BA412D0119CAD1C5A535880E81BB29B /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266AC63E403CE726F20601322152E6A /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		9CA9511B8806093BE9D8CA4815502463 /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99805F934F1F4561F9310B6B2CD3F2 /* PopupDialogDefaultButtons.swift */; };
+		9CB73C2028D1E16DFE87289362792A4F /* CGImage+Accelerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BBEEA5E1EEE424BCCE304AAEA3629E /* CGImage+Accelerate.swift */; };
+		9F4487601DE06B744662316A639E7090 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287E8CB4FD9A9FBEE77CC02069C1D7E6 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		A27C08A7D28756FF4F7F52C9E4E03FC5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA828E7BF423F1863BFA852F21CA2B4D /* QuartzCore.framework */; };
+		A361BD565D008AFD42CA005C14568C38 /* Pods-IosProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8698596C1768C4C8102B032F32637929 /* Pods-IosProject-dummy.m */; };
+		A618545F079CAA794C99EB53FBC58803 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */; };
+		AE10ADA994336195F3DF62DC0BBDFFF6 /* NVActivityIndicatorAnimationBallDoubleBounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519FA1E8C5EBA2AACE9769C5A38B4076 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */; };
+		AE97C4E3169C923A3BA958DE546E502B /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044C5668A9F9C24C42552C95281A3E3 /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
+		AFF14C24018C6BCA2D9311DF895DFC9E /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CBCE07BEE4AE05ED33DC3BD0B5C71 /* UIViewController+Visibility.swift */; };
+		B0B09FEE937FB48C19FF419E42AC2A99 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA9BF7B8097603210B97DBEE36DE1D /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		B134C0718B093D382DFA0A018EF1E28F /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8B83044EFEA133AFEC7E5850A7DF37 /* NVActivityIndicatorAnimationBallBeat.swift */; };
+		B3698D746CD48BF2FFDD6A418392B634 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71975C04BDDA3C2CC8752F6D109EEFFA /* PopupDialog.swift */; };
+		B6FA683B14B58E9D859BF1C9DEF8A27C /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300972D60BE42ABC3551AA2B7013F2BE /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
 		B97AAD9189092AAA02C51D1BDE2AB778 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77980DEC082F892B954D28FBD8819905 /* Accelerate.framework */; };
 		BA4618552515686F83F7873D094EB189 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA828E7BF423F1863BFA852F21CA2B4D /* QuartzCore.framework */; };
-		BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 02589755F0105DA467F08270FD81CC36 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95886269AFE63C515F0D766AA3F28B8C /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BECF0A35A0012D1292BD73577E987B79 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE32B7E498C3FC5E71D16ED3100E9A /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
+		BF0B84E58E3DEEB09EF1767AF5F62467 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F5A835810614A098F1C66C98E093D /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
 		BFBBB98FB84A421683CF327984BDFDFB /* DynamicBlurView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494DB3E1089FA2524CE1137EF0F525AD /* DynamicBlurView.framework */; };
-		BFE28F1E67F5366EAE487FE6242761A2 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D46776A7E822BCE310F65EA3F0F2386 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = CF5CE451B7ACD71D885C591B99B28151 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9A6EB27C8455B45B5A433DADFA4B7 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C60BE1FA828EA5AB3878B9908E2ACFDE /* BlurLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ACCD5893749845CE5610DC489DAF9 /* BlurLayer.swift */; };
-		D00BA2A799CB649CC20090A5A0C368A1 /* Pods-IosProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8698596C1768C4C8102B032F32637929 /* Pods-IosProject-dummy.m */; };
-		D119467F4EC67044E0D8C45DA44C6518 /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48506E67731761365A019768B344C425 /* PresentationManager.swift */; };
-		D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F49993842900ECB7920C31ED1D3EE768 /* FSCalendarTransitionCoordinator.m */; };
-		DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD51D0AF7F2FD3D9B801C8F5D63C74D /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE28F1E67F5366EAE487FE6242761A2 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A64DF1747478FA57C35667A979D931D /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = B395FA9399DD0261413B50A74C88CF10 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8636D9B42B7985D494DC4FCC9C5D1774 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C60BE1FA828EA5AB3878B9908E2ACFDE /* BlurLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DDEBBCBC56F0D4FBA060E8136405D5 /* BlurLayer.swift */; };
+		CB4F715622B5FDC9AC73CE162FC8AFE4 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D31B6F997770C3291357E84CABB195 /* NVActivityIndicatorView-dummy.m */; };
+		D073639EFB1D5504F6AFBDAA4676BA18 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33D024696B9FA5BB61FCEA4F30E0EF /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
+		D119467F4EC67044E0D8C45DA44C6518 /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22D7BEBA856BD001EF8409A5333259 /* PresentationManager.swift */; };
+		D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BB707A60FC0829C606A35313009FD0 /* FSCalendarTransitionCoordinator.m */; };
+		D86E23A9CC96F9ED57FB2A5D36643554 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569242CFF36E91EFC33781CB3DDB0185 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
+		D908C3602CA4905AD9F1AC0FF447CE9F /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE4788314C35AEF0AACF7A643EE3FD /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA9073E30B8D96EB149BC33CF588156 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF54D32B832B65C6BA766DA277C31071 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205549CCE203B10F7800E525B7E573E1 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
 		E30AFF09BE355906C38B27B0CD35F806 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA828E7BF423F1863BFA852F21CA2B4D /* QuartzCore.framework */; };
-		E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9642C4BD6BB46C2370AF857CD406BC04 /* FSCalendarCollectionView.m */; };
+		E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A684780951DB27B45950A17A9A3DE6E5 /* FSCalendarCollectionView.m */; };
+		E607C60452E2A0A34DD84848E2E0267E /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E674847AD79901AE9FF693E37136ED28 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		E7BC269660A431F5EC0ADCC5E14577AB /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3F6569D6B5F4939FF0FB349EC7282 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		EE4C44DB9A3E067C7660FAA862EE11B1 /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE42554EDF8520887C828791DF8C0357 /* NVActivityIndicatorAnimationBallScale.swift */; };
+		EEC2136765111A6B42B8F2B534319792 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */; };
 		F390EE3F6501EA735B348A94C0416E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */; };
-		FCA612513F30F7F0C85AF8FFE30A35F6 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AD9279FAA822C7F16AF342DB558 /* PopupDialogButton.swift */; };
-		FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0515FFAEB14FBEAE4938ADFD766E9AA6 /* FSCalendarCalculator.m */; };
-		FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10A57A1D3F55CA0C41F488988E4AFD /* FSCalendarHeaderView.m */; };
+		F47E4E5707EB746E39CBA999CDF4DAA0 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39D73293C7D3B1B90D56AAF082821 /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		F616D133446433EDF3CC65D4D61E91AD /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE2EA3B984D78EB2FCBB0BC9727906 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		FCA612513F30F7F0C85AF8FFE30A35F6 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83912991AD8E7AF1C77BE8F833C168 /* PopupDialogButton.swift */; };
+		FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F864CA59661F0292B541F65ED3605 /* FSCalendarCalculator.m */; };
+		FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088CDCE2D2B85CE55BA1E50D2743CFE7 /* FSCalendarHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		49D6C520ADC1D4D45F2C71D54735DD45 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E71929B582F8CD57B3DC1FD6560F047;
-			remoteInfo = PopupDialog;
-		};
-		6B9F296BB3215A09D778C6B36F010DB4 /* PBXContainerItemProxy */ = {
+		0A709A53107FB7856B31E5B91351C5F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13285D54682BEAD805960F9E6EEB9949;
 			remoteInfo = FSCalendar;
 		};
-		739272B5F04C557A657D6770D9D23D9B /* PBXContainerItemProxy */ = {
+		37E2380355FF59884D486253A22D2198 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
 			remoteInfo = "Toast-Swift";
 		};
-		ABF90DF0F70E2E46CB1A1C6B7A8955B6 /* PBXContainerItemProxy */ = {
+		68CE57E5719FD5238BC9CE7AFAF45FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF8A82876C43F4DFD625D1823E680EAC;
+			remoteInfo = NVActivityIndicatorView;
+		};
+		90CEEF92B24AF8ABE1E44D2E4A5F377B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E71929B582F8CD57B3DC1FD6560F047;
+			remoteInfo = PopupDialog;
+		};
+		A8381A3624F6DAA1EFE3EBDEC50E7B2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7D914FA2F03C860D5133BA2DB87C594A;
 			remoteInfo = DynamicBlurView;
 		};
-		E3F30E5896D47387336EBEA711F9A4E7 /* PBXContainerItemProxy */ = {
+		CB153986863B35748B7B49F1B7CCC352 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -125,110 +174,155 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00804678DB1F19862C0B63C465525E25 /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
-		02589755F0105DA467F08270FD81CC36 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
-		0515FFAEB14FBEAE4938ADFD766E9AA6 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
-		0837B9FF83965C48195D09F4E57A3CA0 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
-		09D545E2A76DEE24D0800FFAB2B3E102 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
-		0A233A5DF3D441BA526E7A000E418FE4 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		0187C2C2E6872B24752E6238B32C5467 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		01FB35DE1E11EEBC5AF0D90C30F00010 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		02C57FAEAB0553BEE9BF05E7A0A8858B /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		0461081AF168142B5798B85900A6ED37 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		088CDCE2D2B85CE55BA1E50D2743CFE7 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		08B1E06F1454283583C90FA1D58C2562 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		0AE172B05CC5CB9C3AB479CB461B070F /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
 		0C171731B86C159B4655A5C617BEAFFB /* Pods-IosProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IosProject-frameworks.sh"; sourceTree = "<group>"; };
-		0F643512C72B9035958CFD1BBE1311FB /* CGContext+CGImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGContext+CGImage.swift"; path = "Sources/DynamicBlurView/CGContext+CGImage.swift"; sourceTree = "<group>"; };
-		149F39AA7E48144B2EE6AED3F2394016 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
-		14D9A6EB27C8455B45B5A433DADFA4B7 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
-		17FAF15817DD196CF0046A8B40400C2C /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
-		1A6F090A56BB726D137F1FD6F6D60F87 /* DynamicBlurView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicBlurView.debug.xcconfig; sourceTree = "<group>"; };
-		1DC139F0FDD8900F4031734BC372786A /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
-		20A25C320D15AEE39BFCB63DB8527AF4 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
-		240E61A2FFFD1DFED05D625B7DCBF6C4 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
-		2D3C1470FED8904C9BC05B5296105434 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
-		3204F264A965D1EA468687B55F22DD46 /* PopupDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PopupDialog-Info.plist"; sourceTree = "<group>"; };
+		0D90864295F4ACF5EEBE92B530244DF3 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		0E1FA1431186C84EEA29C260337F94C4 /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PopupDialog.modulemap; sourceTree = "<group>"; };
+		0FF84F94CD3582091DE575EC723CFA45 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		1266AC63E403CE726F20601322152E6A /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		141780E594212BA117D6663614C75586 /* DynamicBlurView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynamicBlurView.modulemap; sourceTree = "<group>"; };
+		19579B8BBDAEE64D948FBD4E342F4D97 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		1C3CD45FFBCEB75B491FE8DB3E4B0670 /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
+		1D229AC512795423039170962BA5B23A /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		205549CCE203B10F7800E525B7E573E1 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseRise.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		219CBEF469B66F8113573403711904D8 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
+		24803B0BA2D34C0D415F5126A7159514 /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
+		26150D42F313B0C532602B7BBDFEB009 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = Sources/Base/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		26A28334DCA3A4148CFA194E72D0F793 /* NVActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NVActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		287E8CB4FD9A9FBEE77CC02069C1D7E6 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		2988B8EBE52DB1340DBDAF68E50E323C /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
+		2AEA9BF7B8097603210B97DBEE36DE1D /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotatePulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		2E33D024696B9FA5BB61FCEA4F30E0EF /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		300972D60BE42ABC3551AA2B7013F2BE /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		3189B18A544BA1625BD7CECB9C57DD21 /* PopupDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.debug.xcconfig; sourceTree = "<group>"; };
+		31F3BD40F708A5C69184F716757B4211 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		332305FE394DCC834709D32F1E46021D /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		332CBCE07BEE4AE05ED33DC3BD0B5C71 /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
 		34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AAD156F830790314030A74CB0BEDE8C /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
-		3AD51D0AF7F2FD3D9B801C8F5D63C74D /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
-		3ECE5650266491B30C194EC2515E9F3D /* PopupDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.debug.xcconfig; sourceTree = "<group>"; };
-		3F10A57A1D3F55CA0C41F488988E4AFD /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
-		43A693E93120C90054C446C5284594C9 /* Toast-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		44298DDFF4AECE8A301CDBFE7DD3F7A0 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		3598259C3C54A05DE24F3F043D9E0F14 /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		35D781AFB70CA97F1375441ECE1743D3 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		3761437C002972F1030CA501B047E8EE /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		3F5342D7A60893F3A7D754952F95F25F /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
 		4475F3BBF2718EB9E39F6EDCFF4B00FA /* Pods-IosProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IosProject-Info.plist"; sourceTree = "<group>"; };
-		44B44A0051B8A437E5BB3A4B81D73FA4 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
-		47673E0FD76A38E1D6EA70C51965C91D /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
-		48506E67731761365A019768B344C425 /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
-		486AC3B6FA76364F0C2E7A00E13E05A5 /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
+		45C5B1801F2DD32A73EDA6E94BF07A36 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		47073552A54741863AA9034FA0FF5C26 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
 		494DB3E1089FA2524CE1137EF0F525AD /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50C507625FC1CE21BE3C1A6C31FD9A8E /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
-		54757F476D6481380BCEC93EF81A0EE3 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
-		55DD1DFF10F3CF4BC53D569BACD7E33B /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
-		5942F0AA2DC22F59A917A3EE2C9B9703 /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
+		4E4C3761813B559960D1530C4724AF15 /* DynamicBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-prefix.pch"; sourceTree = "<group>"; };
+		50DDEBBCBC56F0D4FBA060E8136405D5 /* BlurLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurLayer.swift; path = Sources/DynamicBlurView/BlurLayer.swift; sourceTree = "<group>"; };
+		519FA1E8C5EBA2AACE9769C5A38B4076 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallDoubleBounce.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallDoubleBounce.swift; sourceTree = "<group>"; };
+		532DBA3EB87D104EF20B1DB61530BE7C /* NVActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		543418994AACC9A1BC47598474DFFAFC /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		569242CFF36E91EFC33781CB3DDB0185 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		57D04041756DAFD5BFA5137377A7BC25 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		58BBEEA5E1EEE424BCCE304AAEA3629E /* CGImage+Accelerate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Accelerate.swift"; path = "Sources/DynamicBlurView/CGImage+Accelerate.swift"; sourceTree = "<group>"; };
+		59B61F94DA8147FD3DA424A985DF0625 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
 		5C728D1AB824BD97BAC02757F0714723 /* Pods-IosProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IosProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		60AE4290A3133BED374DD94485944129 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
-		61258CCA981DE29FA027372B5F465FC5 /* FSCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.release.xcconfig; sourceTree = "<group>"; };
-		61A931CA4A40B6E0F9321C909F0CC3D8 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
-		62162C22C62B8FE2921A3CE6EC6B72C8 /* UIImageView+Calculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Calculations.swift"; path = "PopupDialog/Classes/UIImageView+Calculations.swift"; sourceTree = "<group>"; };
-		6313F596BCA69B7CB27BFCD91615EE6A /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
-		6507D61757D53DF09D6628139A167E0E /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
-		66864E6671AE57A246330BA9A9AA90D7 /* UIImage+Blur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Blur.swift"; path = "Sources/DynamicBlurView/UIImage+Blur.swift"; sourceTree = "<group>"; };
-		669F92D394D97FA554DA0F9507EC1CB2 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
-		6C5B8B6D4315B7CE7E73AA669A5708F9 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
-		6D46776A7E822BCE310F65EA3F0F2386 /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
-		6F54949FFC7FDABC1A928B88DE75C74A /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		5D79E903B1333E67C11E2C50380D9040 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		6044C5668A9F9C24C42552C95281A3E3 /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		6815C2EF7B829E09DAD14DD38A8F7A73 /* Toast-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		6D8B83044EFEA133AFEC7E5850A7DF37 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		6ECB71B481D19A7487C12D7D23FF3CE1 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		6F2CE46F932C23EAFABB9A3666462AF5 /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		6F7A57E60D9E35CAAE250DD7959E40CE /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZag.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
 		6F83C464B23D918C14268B13BEE7D1F9 /* Pods_IosProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IosProject.framework; path = "Pods-IosProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		71216C62B08F2AAC9E547BFECE41DBD5 /* DynamicBlurView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynamicBlurView-Info.plist"; sourceTree = "<group>"; };
-		763E73489447F97B139B3FAF66824437 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
-		76598AD9279FAA822C7F16AF342DB558 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
-		76F10D9F1BCA96D92E1BD3B4EB460423 /* DynamicBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DynamicBlurView.h; path = Sources/DynamicBlurView/DynamicBlurView.h; sourceTree = "<group>"; };
+		71975C04BDDA3C2CC8752F6D109EEFFA /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
+		73746FEA8AE9787972F418C16680D7C6 /* NVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		75070E89ADA76FEC20C8ACD14F061A40 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
 		77980DEC082F892B954D28FBD8819905 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		781884820EFAE04BF09B8F799120483C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		78E24A4048DE84144E1A720F0810C107 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
-		835BD19BA59DA1537DB7BE480054472C /* TrackingMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackingMode.swift; path = Sources/DynamicBlurView/TrackingMode.swift; sourceTree = "<group>"; };
-		83FEADDDFF12FB395B47DC50D3AD6EFA /* DynamicBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicBlurView.swift; path = Sources/DynamicBlurView/DynamicBlurView.swift; sourceTree = "<group>"; };
-		845AC5A3AEBEE3A7050E8841F960C94F /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		7922B2A0249D91B29B30A0ACCDD1761E /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		7A64DF1747478FA57C35667A979D931D /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
+		7B5CCD08BC04492995E66F6C5EB06492 /* DynamicBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DynamicBlurView.h; path = Sources/DynamicBlurView/DynamicBlurView.h; sourceTree = "<group>"; };
+		7DA9073E30B8D96EB149BC33CF588156 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		7EAE4788314C35AEF0AACF7A643EE3FD /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		7FA46D7BDF0A65BB81C6DEA6CB87A84D /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		80119B3BFFDEF5EAD643F6C69C167036 /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		80123A61952E47799EECEED4C2C4C7F7 /* UIImage+Blur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Blur.swift"; path = "Sources/DynamicBlurView/UIImage+Blur.swift"; sourceTree = "<group>"; };
+		827F65777C6076285B0178E7E22991D8 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		8636D9B42B7985D494DC4FCC9C5D1774 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
 		8698596C1768C4C8102B032F32637929 /* Pods-IosProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IosProject-dummy.m"; sourceTree = "<group>"; };
 		86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicBlurView.framework; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87D85CCA43A53B3BDA6902A95CD5F9F6 /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PopupDialog.modulemap; sourceTree = "<group>"; };
-		8BF518C821CCCF6DD94E2E3CD06A940D /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
-		9236581A17883A69080E74BC53DB576B /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		86FED163E2EB480FF321BA284DC7EC49 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		91A4943CE507356A7682077DFB243295 /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
+		93A3F6569D6B5F4939FF0FB349EC7282 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		93F883DDC8CA70160C65EAC0CFEF2C24 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		941666C1CEA63E2E084F833ECF34CA06 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCircleStrokeSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
+		9427FC3A03EC610E583BA2BA65C9A7DA /* Toast-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9642C4BD6BB46C2370AF857CD406BC04 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		95886269AFE63C515F0D766AA3F28B8C /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		9620A4E08E98E2A121E3190D48873738 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		99FD15B6376D106639D90BFAD388947F /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
 		9BEF04F46293009C56D844F62BD7FFF2 /* Pods-IosProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IosProject-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A068BBD8688EAE62A7F6AB95F9C86650 /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
-		A2BFB068CCE3D63E4F9753F6393F5300 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
-		A766631D2D57B5241735F08711E4B21D /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		ADD24D1FCD7E670E572E7B916B430FB2 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
-		BAB2447A13E39F9B11F5002F95065872 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
-		BBEB65FFD5F34A5F147923FD672BD240 /* DynamicBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-prefix.pch"; sourceTree = "<group>"; };
-		BCECA57523A9A004FA58F06B41C32B0C /* DynamicBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicBlurView-dummy.m"; sourceTree = "<group>"; };
+		9DF6F63752B8FBE39267953F979A3674 /* DynamicBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicBlurView.swift; path = Sources/DynamicBlurView/DynamicBlurView.swift; sourceTree = "<group>"; };
+		9E22D7BEBA856BD001EF8409A5333259 /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
+		9EDCBDA23B82C6DD6E75D354DA7A251E /* PopupDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.release.xcconfig; sourceTree = "<group>"; };
+		A075ACBDA9DE698025730B1F404AECAC /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4541FE310EDC2E5D41B88696BE15C1F /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		A684780951DB27B45950A17A9A3DE6E5 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		A9645EB0F5E28D9E29C12FA988AB1C70 /* DynamicBlurView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynamicBlurView-Info.plist"; sourceTree = "<group>"; };
+		AA83912991AD8E7AF1C77BE8F833C168 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		ABC8BA96AF1938AE121D0169B5F8DA5A /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		AC3881DFF6CECCCEBE8945315D26B800 /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		AC7722D028B4E0F5D75C5B0691E43E0E /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		AD260FF9DFEF8F411E7D69789818F10E /* DynamicBlurView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicBlurView.debug.xcconfig; sourceTree = "<group>"; };
+		AE42554EDF8520887C828791DF8C0357 /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		AE99805F934F1F4561F9310B6B2CD3F2 /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		AF2CDE6FF98D509E4EFB426139D928F8 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = Sources/Base/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		B1E9F853311343AE4B50EED5B095D585 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		B31F1E6EDA38517F19A90987F26A55AD /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		B3262FFBAD2D75ADBAF906158DA16F42 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		B395FA9399DD0261413B50A74C88CF10 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		B4D31B6F997770C3291357E84CABB195 /* NVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		B513355BE114EC0C491E4EC59C74904B /* UIImageView+Calculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Calculations.swift"; path = "PopupDialog/Classes/UIImageView+Calculations.swift"; sourceTree = "<group>"; };
+		BA9D629256D03B34D9016756B648CEAC /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
+		BB3605E47F57D5F4E66F0B34B6F3225D /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		BCE24020FE5CB3591BB97A2CC82FCE37 /* FSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
 		BD112F41549C2683A23D20C3EAB620FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BFD31424F7D1304F0F6E25856A19E0E8 /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
-		C30ACCD5893749845CE5610DC489DAF9 /* BlurLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurLayer.swift; path = Sources/DynamicBlurView/BlurLayer.swift; sourceTree = "<group>"; };
-		C48D732D470A952D57F92F833EA78C73 /* DynamicBlurView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynamicBlurView.modulemap; sourceTree = "<group>"; };
-		C4D8F7318FA18DD6AEF5A23816CF1706 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
-		C6D530B3183E5659FFE4343D7CC05B1A /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		BDD5E0F80566F42E6B643EF31AC3018E /* CaptureQuality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureQuality.swift; path = Sources/DynamicBlurView/CaptureQuality.swift; sourceTree = "<group>"; };
+		C1DE32B7E498C3FC5E71D16ED3100E9A /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridPulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		C23AAE3FA6C8BD4F62FFA18EEA337419 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		C34212E4ACD104AFE47ADA45FAE1944F /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
+		C4DCE377033B6CD08F93973A3D204397 /* CGContext+CGImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGContext+CGImage.swift"; path = "Sources/DynamicBlurView/CGContext+CGImage.swift"; sourceTree = "<group>"; };
+		C5791914CB9A720F58717616D87544AF /* DynamicBlurView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicBlurView.release.xcconfig; sourceTree = "<group>"; };
+		C67F5A835810614A098F1C66C98E093D /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
 		CA477E15B8C2901D10DFDCE9578D1A40 /* Pods-IosProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IosProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CA828E7BF423F1863BFA852F21CA2B4D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		CAE1D9CD45A227003952F40D23152997 /* FSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
-		CD1B9A7F0E580939CCE764BFDC639264 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
-		CF5CE451B7ACD71D885C591B99B28151 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		CC2DF7465CFEF42F5D8E44A0EBA9C432 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		CE199F1CE0F1B5552018B570A0C9DA14 /* DynamicBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicBlurView-dummy.m"; sourceTree = "<group>"; };
+		D1B29E1FBC271B20E0F981C496B87D39 /* PopupDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PopupDialog-Info.plist"; sourceTree = "<group>"; };
+		D1B39D73293C7D3B1B90D56AAF082821 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
 		D39FE183DFE3D7C49019BD51544A6D48 /* Pods-IosProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IosProject.modulemap"; sourceTree = "<group>"; };
 		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6AFFE2D03A3B3C5909BC908E2C0A15F /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
-		DA8A4B858FF97A66348DD7155FFCB88C /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
-		DCD9968067104B8BAD96AA10CCDD9EC3 /* CaptureQuality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureQuality.swift; path = Sources/DynamicBlurView/CaptureQuality.swift; sourceTree = "<group>"; };
-		DFE6A6DA7816B3D2A6BB362AA2966FE6 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
-		E030746C1CAE290956FD86C0633E2628 /* DynamicBlurView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicBlurView.release.xcconfig; sourceTree = "<group>"; };
-		E4D2772BA1307B1772EAD9F5B335625D /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
-		E5DBA7F25AFC827FBF006171589575AD /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
-		E5F8BE3F30150A613A575FDBB42C5AE3 /* DynamicBlurView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-umbrella.h"; sourceTree = "<group>"; };
-		E8A074EEEAEA08F340D6C096C8032162 /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
-		E9BFB27B40FD6D38F5645E4AF4946C5C /* FSCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.debug.xcconfig; sourceTree = "<group>"; };
-		ECB9AD3B58F7F0CBF7034D0832207E60 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
-		EDC843E2D79F723FFA7592475918EA18 /* Toast-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		F1DADAAE052EB759430BAFB6AEBE1690 /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
+		D60A72C7BEEF0F6BF51BAAE8DFA70D20 /* TrackingMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackingMode.swift; path = Sources/DynamicBlurView/TrackingMode.swift; sourceTree = "<group>"; };
+		D8ED716471FFC2F349629B5183F30B8E /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		DF73BFD78F2ECA8B2064BC0126F1C7D1 /* DynamicBlurView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-umbrella.h"; sourceTree = "<group>"; };
+		E1CE2EA3B984D78EB2FCBB0BC9727906 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		E387C75EF20D9D8164E3CD4E38E16E03 /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
+		E3B25380E5BCDDB9C55CFA3803D7D514 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		E4C0F6835B8C5B40E7D69D995BD808FF /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		E5F8DDEACC7DC2BBB6A5317135A33C0B /* FSCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.debug.xcconfig; sourceTree = "<group>"; };
+		E674847AD79901AE9FF693E37136ED28 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		E6BB707A60FC0829C606A35313009FD0 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		E94DA378D3B9689FA3BF2AC91D15409A /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
+		EC4F4C77E91DC00CEFFF66D52E321E54 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		EE74852D9E9578AEEBAECE4A0F3B60B2 /* FSCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.release.xcconfig; sourceTree = "<group>"; };
+		EF3FE71D90F863B296876569693A6DDE /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
+		EFA7BEF52C76051A9C1F6916EE9EE278 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		F25F864CA59661F0292B541F65ED3605 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		F30DA198A2EB52E3CC63B00E99D971EC /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = Sources/Base/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
 		F41BC6B6FD64479B492CC1F379280EC8 /* Pods-IosProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IosProject-umbrella.h"; sourceTree = "<group>"; };
-		F49993842900ECB7920C31ED1D3EE768 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
-		F97E8FD14CA6D067A154ABC84573481E /* PopupDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.release.xcconfig; sourceTree = "<group>"; };
+		F88B309E29EF033A596A648D423A79D0 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
 		FA3AA74686AD7BFDB19396E7F9FC7B96 /* Pods-IosProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IosProject.release.xcconfig"; sourceTree = "<group>"; };
-		FCD1B7A4A4FA24A33452D4EBEF2C4351 /* CGImage+Accelerate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Accelerate.swift"; path = "Sources/DynamicBlurView/CGImage+Accelerate.swift"; sourceTree = "<group>"; };
+		FA866B533A8441953E049678606DE612 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		FE8800298D2A9692E1BB1A48A623E7D8 /* NVActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +332,16 @@
 			files = (
 				753C8C42CEFBED94E1F1E752955F0254 /* Foundation.framework in Frameworks */,
 				E30AFF09BE355906C38B27B0CD35F806 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71DAF6F92AAAD94899E0FD2F0C51DCAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC2136765111A6B42B8F2B534319792 /* Foundation.framework in Frameworks */,
+				A27C08A7D28756FF4F7F52C9E4E03FC5 /* QuartzCore.framework in Frameworks */,
+				2F99F6A552F39A0791C59F67304C3649 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,11 +364,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFA2F426F55348149276DE2ABD191303 /* Frameworks */ = {
+		CAD4D9CFF9A2CE9BE0D534A77DD27126 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				232D4AAA4FDC92BEB08E94C1BCC2B17A /* Foundation.framework in Frameworks */,
+				A618545F079CAA794C99EB53FBC58803 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,52 +385,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21AC5EFD57DD58157C285EBFAE72DE05 /* Pods */ = {
+		3196DCC35AFA0C8E76BA31967E1FC5A0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B878F327E5DA6249EFFB88D319E31BBA /* DynamicBlurView */,
-				DFF61AF45959F6D51978B623D063B3B7 /* FSCalendar */,
-				24C9623290DCEED9F292E7155CC9AE28 /* PopupDialog */,
-				A9AB06898088FB1D3A7CDF92BB7009FA /* Toast-Swift */,
+				B1E9F853311343AE4B50EED5B095D585 /* Toast-Swift.modulemap */,
+				3F5342D7A60893F3A7D754952F95F25F /* Toast-Swift-dummy.m */,
+				6F2CE46F932C23EAFABB9A3666462AF5 /* Toast-Swift-Info.plist */,
+				0D90864295F4ACF5EEBE92B530244DF3 /* Toast-Swift-prefix.pch */,
+				75070E89ADA76FEC20C8ACD14F061A40 /* Toast-Swift-umbrella.h */,
+				9427FC3A03EC610E583BA2BA65C9A7DA /* Toast-Swift.debug.xcconfig */,
+				6815C2EF7B829E09DAD14DD38A8F7A73 /* Toast-Swift.release.xcconfig */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		227ECBE2C8EC377A0C1DEFFFE453436F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */,
-				95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */,
-				6F83C464B23D918C14268B13BEE7D1F9 /* Pods_IosProject.framework */,
-				34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */,
-				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		24C9623290DCEED9F292E7155CC9AE28 /* PopupDialog */ = {
-			isa = PBXGroup;
-			children = (
-				00804678DB1F19862C0B63C465525E25 /* InteractiveTransition.swift */,
-				E8A074EEEAEA08F340D6C096C8032162 /* PopupDialog.swift */,
-				55DD1DFF10F3CF4BC53D569BACD7E33B /* PopupDialog+Keyboard.swift */,
-				76598AD9279FAA822C7F16AF342DB558 /* PopupDialogButton.swift */,
-				BFD31424F7D1304F0F6E25856A19E0E8 /* PopupDialogContainerView.swift */,
-				9236581A17883A69080E74BC53DB576B /* PopupDialogDefaultButtons.swift */,
-				763E73489447F97B139B3FAF66824437 /* PopupDialogDefaultView.swift */,
-				ECB9AD3B58F7F0CBF7034D0832207E60 /* PopupDialogDefaultViewController.swift */,
-				240E61A2FFFD1DFED05D625B7DCBF6C4 /* PopupDialogOverlayView.swift */,
-				5942F0AA2DC22F59A917A3EE2C9B9703 /* PresentationController.swift */,
-				48506E67731761365A019768B344C425 /* PresentationManager.swift */,
-				486AC3B6FA76364F0C2E7A00E13E05A5 /* TransitionAnimations.swift */,
-				F1DADAAE052EB759430BAFB6AEBE1690 /* TransitionAnimator.swift */,
-				62162C22C62B8FE2921A3CE6EC6B72C8 /* UIImageView+Calculations.swift */,
-				17FAF15817DD196CF0046A8B40400C2C /* UIView+Animations.swift */,
-				E4D2772BA1307B1772EAD9F5B335625D /* UIViewController+Visibility.swift */,
-				817D6F92AB26AD3D5137C503BB266EAF /* Support Files */,
-			);
-			name = PopupDialog;
-			path = PopupDialog;
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
 			sourceTree = "<group>";
 		};
 		4D962F90D33F344F3894B890F8473F92 /* iOS */ = {
@@ -340,61 +411,129 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		817D6F92AB26AD3D5137C503BB266EAF /* Support Files */ = {
+		5645FEBDE86553D158A99BF9BFC30E67 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				87D85CCA43A53B3BDA6902A95CD5F9F6 /* PopupDialog.modulemap */,
-				A068BBD8688EAE62A7F6AB95F9C86650 /* PopupDialog-dummy.m */,
-				3204F264A965D1EA468687B55F22DD46 /* PopupDialog-Info.plist */,
-				6507D61757D53DF09D6628139A167E0E /* PopupDialog-prefix.pch */,
-				6D46776A7E822BCE310F65EA3F0F2386 /* PopupDialog-umbrella.h */,
-				3ECE5650266491B30C194EC2515E9F3D /* PopupDialog.debug.xcconfig */,
-				F97E8FD14CA6D067A154ABC84573481E /* PopupDialog.release.xcconfig */,
+				0E1FA1431186C84EEA29C260337F94C4 /* PopupDialog.modulemap */,
+				EF3FE71D90F863B296876569693A6DDE /* PopupDialog-dummy.m */,
+				D1B29E1FBC271B20E0F981C496B87D39 /* PopupDialog-Info.plist */,
+				E94DA378D3B9689FA3BF2AC91D15409A /* PopupDialog-prefix.pch */,
+				7A64DF1747478FA57C35667A979D931D /* PopupDialog-umbrella.h */,
+				3189B18A544BA1625BD7CECB9C57DD21 /* PopupDialog.debug.xcconfig */,
+				9EDCBDA23B82C6DD6E75D354DA7A251E /* PopupDialog.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PopupDialog";
 			sourceTree = "<group>";
 		};
-		A9AB06898088FB1D3A7CDF92BB7009FA /* Toast-Swift */ = {
+		5D66ABA8CD2E344EC8C270069631567A /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				845AC5A3AEBEE3A7050E8841F960C94F /* Toast.swift */,
-				CDA71801C90A87369E4DFD42C511B15A /* Support Files */,
+				02C57FAEAB0553BEE9BF05E7A0A8858B /* FSCalendar.h */,
+				47073552A54741863AA9034FA0FF5C26 /* FSCalendar.m */,
+				0187C2C2E6872B24752E6238B32C5467 /* FSCalendarAppearance.h */,
+				332305FE394DCC834709D32F1E46021D /* FSCalendarAppearance.m */,
+				ABC8BA96AF1938AE121D0169B5F8DA5A /* FSCalendarCalculator.h */,
+				F25F864CA59661F0292B541F65ED3605 /* FSCalendarCalculator.m */,
+				8636D9B42B7985D494DC4FCC9C5D1774 /* FSCalendarCell.h */,
+				1D229AC512795423039170962BA5B23A /* FSCalendarCell.m */,
+				7DA9073E30B8D96EB149BC33CF588156 /* FSCalendarCollectionView.h */,
+				A684780951DB27B45950A17A9A3DE6E5 /* FSCalendarCollectionView.m */,
+				6ECB71B481D19A7487C12D7D23FF3CE1 /* FSCalendarCollectionViewLayout.h */,
+				08B1E06F1454283583C90FA1D58C2562 /* FSCalendarCollectionViewLayout.m */,
+				59B61F94DA8147FD3DA424A985DF0625 /* FSCalendarConstants.h */,
+				EFA7BEF52C76051A9C1F6916EE9EE278 /* FSCalendarConstants.m */,
+				E4C0F6835B8C5B40E7D69D995BD808FF /* FSCalendarDelegationFactory.h */,
+				CC2DF7465CFEF42F5D8E44A0EBA9C432 /* FSCalendarDelegationFactory.m */,
+				35D781AFB70CA97F1375441ECE1743D3 /* FSCalendarDelegationProxy.h */,
+				31F3BD40F708A5C69184F716757B4211 /* FSCalendarDelegationProxy.m */,
+				01FB35DE1E11EEBC5AF0D90C30F00010 /* FSCalendarDynamicHeader.h */,
+				BB3605E47F57D5F4E66F0B34B6F3225D /* FSCalendarExtensions.h */,
+				0FF84F94CD3582091DE575EC723CFA45 /* FSCalendarExtensions.m */,
+				95886269AFE63C515F0D766AA3F28B8C /* FSCalendarHeaderView.h */,
+				088CDCE2D2B85CE55BA1E50D2743CFE7 /* FSCalendarHeaderView.m */,
+				B395FA9399DD0261413B50A74C88CF10 /* FSCalendarSeparatorDecorationView.h */,
+				19579B8BBDAEE64D948FBD4E342F4D97 /* FSCalendarSeparatorDecorationView.m */,
+				827F65777C6076285B0178E7E22991D8 /* FSCalendarStickyHeader.h */,
+				A4541FE310EDC2E5D41B88696BE15C1F /* FSCalendarStickyHeader.m */,
+				D8ED716471FFC2F349629B5183F30B8E /* FSCalendarTransitionCoordinator.h */,
+				E6BB707A60FC0829C606A35313009FD0 /* FSCalendarTransitionCoordinator.m */,
+				9620A4E08E98E2A121E3190D48873738 /* FSCalendarWeekdayView.h */,
+				0461081AF168142B5798B85900A6ED37 /* FSCalendarWeekdayView.m */,
+				D9EB506A8A22AD1E025C316FF977229E /* Support Files */,
 			);
-			name = "Toast-Swift";
-			path = "Toast-Swift";
+			name = FSCalendar;
+			path = FSCalendar;
 			sourceTree = "<group>";
 		};
-		B878F327E5DA6249EFFB88D319E31BBA /* DynamicBlurView */ = {
+		7B3B783AA954A541BC847E0960B6A94F /* DynamicBlurView */ = {
 			isa = PBXGroup;
 			children = (
-				C30ACCD5893749845CE5610DC489DAF9 /* BlurLayer.swift */,
-				DCD9968067104B8BAD96AA10CCDD9EC3 /* CaptureQuality.swift */,
-				0F643512C72B9035958CFD1BBE1311FB /* CGContext+CGImage.swift */,
-				FCD1B7A4A4FA24A33452D4EBEF2C4351 /* CGImage+Accelerate.swift */,
-				76F10D9F1BCA96D92E1BD3B4EB460423 /* DynamicBlurView.h */,
-				83FEADDDFF12FB395B47DC50D3AD6EFA /* DynamicBlurView.swift */,
-				835BD19BA59DA1537DB7BE480054472C /* TrackingMode.swift */,
-				66864E6671AE57A246330BA9A9AA90D7 /* UIImage+Blur.swift */,
-				BE5F589694CEC201231D39F22E33F837 /* Support Files */,
+				50DDEBBCBC56F0D4FBA060E8136405D5 /* BlurLayer.swift */,
+				BDD5E0F80566F42E6B643EF31AC3018E /* CaptureQuality.swift */,
+				C4DCE377033B6CD08F93973A3D204397 /* CGContext+CGImage.swift */,
+				58BBEEA5E1EEE424BCCE304AAEA3629E /* CGImage+Accelerate.swift */,
+				7B5CCD08BC04492995E66F6C5EB06492 /* DynamicBlurView.h */,
+				9DF6F63752B8FBE39267953F979A3674 /* DynamicBlurView.swift */,
+				D60A72C7BEEF0F6BF51BAAE8DFA70D20 /* TrackingMode.swift */,
+				80123A61952E47799EECEED4C2C4C7F7 /* UIImage+Blur.swift */,
+				8A709A0A2C163502722ADCA40701D521 /* Support Files */,
 			);
 			name = DynamicBlurView;
 			path = DynamicBlurView;
 			sourceTree = "<group>";
 		};
-		BE5F589694CEC201231D39F22E33F837 /* Support Files */ = {
+		8A709A0A2C163502722ADCA40701D521 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C48D732D470A952D57F92F833EA78C73 /* DynamicBlurView.modulemap */,
-				BCECA57523A9A004FA58F06B41C32B0C /* DynamicBlurView-dummy.m */,
-				71216C62B08F2AAC9E547BFECE41DBD5 /* DynamicBlurView-Info.plist */,
-				BBEB65FFD5F34A5F147923FD672BD240 /* DynamicBlurView-prefix.pch */,
-				E5F8BE3F30150A613A575FDBB42C5AE3 /* DynamicBlurView-umbrella.h */,
-				1A6F090A56BB726D137F1FD6F6D60F87 /* DynamicBlurView.debug.xcconfig */,
-				E030746C1CAE290956FD86C0633E2628 /* DynamicBlurView.release.xcconfig */,
+				141780E594212BA117D6663614C75586 /* DynamicBlurView.modulemap */,
+				CE199F1CE0F1B5552018B570A0C9DA14 /* DynamicBlurView-dummy.m */,
+				A9645EB0F5E28D9E29C12FA988AB1C70 /* DynamicBlurView-Info.plist */,
+				4E4C3761813B559960D1530C4724AF15 /* DynamicBlurView-prefix.pch */,
+				DF73BFD78F2ECA8B2064BC0126F1C7D1 /* DynamicBlurView-umbrella.h */,
+				AD260FF9DFEF8F411E7D69789818F10E /* DynamicBlurView.debug.xcconfig */,
+				C5791914CB9A720F58717616D87544AF /* DynamicBlurView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DynamicBlurView";
+			sourceTree = "<group>";
+		};
+		9C25E1850BA0278AE21319DCBE62C172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */,
+				95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */,
+				A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */,
+				6F83C464B23D918C14268B13BEE7D1F9 /* Pods_IosProject.framework */,
+				34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */,
+				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E588B9B30052BA23BF7B474FEB5AE63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				80119B3BFFDEF5EAD643F6C69C167036 /* NVActivityIndicatorView.modulemap */,
+				B4D31B6F997770C3291357E84CABB195 /* NVActivityIndicatorView-dummy.m */,
+				26A28334DCA3A4148CFA194E72D0F793 /* NVActivityIndicatorView-Info.plist */,
+				86FED163E2EB480FF321BA284DC7EC49 /* NVActivityIndicatorView-prefix.pch */,
+				73746FEA8AE9787972F418C16680D7C6 /* NVActivityIndicatorView-umbrella.h */,
+				FE8800298D2A9692E1BB1A48A623E7D8 /* NVActivityIndicatorView.debug.xcconfig */,
+				532DBA3EB87D104EF20B1DB61530BE7C /* NVActivityIndicatorView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NVActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		BD32826651E5D28647F1B5D18B1A6685 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				FEBF178514965A6BC69B9928A1B2A407 /* Base */,
+				9E588B9B30052BA23BF7B474FEB5AE63 /* Support Files */,
+			);
+			name = NVActivityIndicatorView;
+			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
 		C7859E37DA6ED16E81197FD9F58094DD /* Targets Support Files */ = {
@@ -405,30 +544,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CDA71801C90A87369E4DFD42C511B15A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4D8F7318FA18DD6AEF5A23816CF1706 /* Toast-Swift.modulemap */,
-				149F39AA7E48144B2EE6AED3F2394016 /* Toast-Swift-dummy.m */,
-				3AAD156F830790314030A74CB0BEDE8C /* Toast-Swift-Info.plist */,
-				44298DDFF4AECE8A301CDBFE7DD3F7A0 /* Toast-Swift-prefix.pch */,
-				DFE6A6DA7816B3D2A6BB362AA2966FE6 /* Toast-Swift-umbrella.h */,
-				EDC843E2D79F723FFA7592475918EA18 /* Toast-Swift.debug.xcconfig */,
-				43A693E93120C90054C446C5284594C9 /* Toast-Swift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Toast-Swift";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				E5C7D2BAE4B189F381BD6041A1C474B2 /* Frameworks */,
-				21AC5EFD57DD58157C285EBFAE72DE05 /* Pods */,
-				227ECBE2C8EC377A0C1DEFFFE453436F /* Products */,
+				EC673ED46ADD4A243BA29432CDCB4D38 /* Pods */,
+				9C25E1850BA0278AE21319DCBE62C172 /* Products */,
 				C7859E37DA6ED16E81197FD9F58094DD /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CF98941D0D6CCB1CC8BF028DD4D7B4D2 /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B31F1E6EDA38517F19A90987F26A55AD /* Toast.swift */,
+				3196DCC35AFA0C8E76BA31967E1FC5A0 /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
 			sourceTree = "<group>";
 		};
 		D809BE999EFC831C17645645D82148F9 /* Pods-IosProject */ = {
@@ -448,59 +582,19 @@
 			path = "Target Support Files/Pods-IosProject";
 			sourceTree = "<group>";
 		};
-		DC773589C7D6573E39F4E2FBB1C1FEEC /* Support Files */ = {
+		D9EB506A8A22AD1E025C316FF977229E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				61A931CA4A40B6E0F9321C909F0CC3D8 /* FSCalendar.modulemap */,
-				CD1B9A7F0E580939CCE764BFDC639264 /* FSCalendar-dummy.m */,
-				CAE1D9CD45A227003952F40D23152997 /* FSCalendar-Info.plist */,
-				20A25C320D15AEE39BFCB63DB8527AF4 /* FSCalendar-prefix.pch */,
-				0837B9FF83965C48195D09F4E57A3CA0 /* FSCalendar-umbrella.h */,
-				E9BFB27B40FD6D38F5645E4AF4946C5C /* FSCalendar.debug.xcconfig */,
-				61258CCA981DE29FA027372B5F465FC5 /* FSCalendar.release.xcconfig */,
+				FA866B533A8441953E049678606DE612 /* FSCalendar.modulemap */,
+				99FD15B6376D106639D90BFAD388947F /* FSCalendar-dummy.m */,
+				BCE24020FE5CB3591BB97A2CC82FCE37 /* FSCalendar-Info.plist */,
+				93F883DDC8CA70160C65EAC0CFEF2C24 /* FSCalendar-prefix.pch */,
+				AC7722D028B4E0F5D75C5B0691E43E0E /* FSCalendar-umbrella.h */,
+				E5F8DDEACC7DC2BBB6A5317135A33C0B /* FSCalendar.debug.xcconfig */,
+				EE74852D9E9578AEEBAECE4A0F3B60B2 /* FSCalendar.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FSCalendar";
-			sourceTree = "<group>";
-		};
-		DFF61AF45959F6D51978B623D063B3B7 /* FSCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				47673E0FD76A38E1D6EA70C51965C91D /* FSCalendar.h */,
-				DA8A4B858FF97A66348DD7155FFCB88C /* FSCalendar.m */,
-				E5DBA7F25AFC827FBF006171589575AD /* FSCalendarAppearance.h */,
-				A2BFB068CCE3D63E4F9753F6393F5300 /* FSCalendarAppearance.m */,
-				ADD24D1FCD7E670E572E7B916B430FB2 /* FSCalendarCalculator.h */,
-				0515FFAEB14FBEAE4938ADFD766E9AA6 /* FSCalendarCalculator.m */,
-				14D9A6EB27C8455B45B5A433DADFA4B7 /* FSCalendarCell.h */,
-				1DC139F0FDD8900F4031734BC372786A /* FSCalendarCell.m */,
-				3AD51D0AF7F2FD3D9B801C8F5D63C74D /* FSCalendarCollectionView.h */,
-				9642C4BD6BB46C2370AF857CD406BC04 /* FSCalendarCollectionView.m */,
-				44B44A0051B8A437E5BB3A4B81D73FA4 /* FSCalendarCollectionViewLayout.h */,
-				6F54949FFC7FDABC1A928B88DE75C74A /* FSCalendarCollectionViewLayout.m */,
-				6313F596BCA69B7CB27BFCD91615EE6A /* FSCalendarConstants.h */,
-				54757F476D6481380BCEC93EF81A0EE3 /* FSCalendarConstants.m */,
-				669F92D394D97FA554DA0F9507EC1CB2 /* FSCalendarDelegationFactory.h */,
-				2D3C1470FED8904C9BC05B5296105434 /* FSCalendarDelegationFactory.m */,
-				8BF518C821CCCF6DD94E2E3CD06A940D /* FSCalendarDelegationProxy.h */,
-				C6D530B3183E5659FFE4343D7CC05B1A /* FSCalendarDelegationProxy.m */,
-				0A233A5DF3D441BA526E7A000E418FE4 /* FSCalendarDynamicHeader.h */,
-				50C507625FC1CE21BE3C1A6C31FD9A8E /* FSCalendarExtensions.h */,
-				D6AFFE2D03A3B3C5909BC908E2C0A15F /* FSCalendarExtensions.m */,
-				02589755F0105DA467F08270FD81CC36 /* FSCalendarHeaderView.h */,
-				3F10A57A1D3F55CA0C41F488988E4AFD /* FSCalendarHeaderView.m */,
-				CF5CE451B7ACD71D885C591B99B28151 /* FSCalendarSeparatorDecorationView.h */,
-				6C5B8B6D4315B7CE7E73AA669A5708F9 /* FSCalendarSeparatorDecorationView.m */,
-				A766631D2D57B5241735F08711E4B21D /* FSCalendarStickyHeader.h */,
-				BAB2447A13E39F9B11F5002F95065872 /* FSCalendarStickyHeader.m */,
-				09D545E2A76DEE24D0800FFAB2B3E102 /* FSCalendarTransitionCoordinator.h */,
-				F49993842900ECB7920C31ED1D3EE768 /* FSCalendarTransitionCoordinator.m */,
-				78E24A4048DE84144E1A720F0810C107 /* FSCalendarWeekdayView.h */,
-				60AE4290A3133BED374DD94485944129 /* FSCalendarWeekdayView.m */,
-				DC773589C7D6573E39F4E2FBB1C1FEEC /* Support Files */,
-			);
-			name = FSCalendar;
-			path = FSCalendar;
 			sourceTree = "<group>";
 		};
 		E5C7D2BAE4B189F381BD6041A1C474B2 /* Frameworks */ = {
@@ -510,6 +604,87 @@
 				4D962F90D33F344F3894B890F8473F92 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC673ED46ADD4A243BA29432CDCB4D38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B783AA954A541BC847E0960B6A94F /* DynamicBlurView */,
+				5D66ABA8CD2E344EC8C270069631567A /* FSCalendar */,
+				BD32826651E5D28647F1B5D18B1A6685 /* NVActivityIndicatorView */,
+				FC2471D6187F93D7868851097EE3CB14 /* PopupDialog */,
+				CF98941D0D6CCB1CC8BF028DD4D7B4D2 /* Toast-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC2471D6187F93D7868851097EE3CB14 /* PopupDialog */ = {
+			isa = PBXGroup;
+			children = (
+				1C3CD45FFBCEB75B491FE8DB3E4B0670 /* InteractiveTransition.swift */,
+				71975C04BDDA3C2CC8752F6D109EEFFA /* PopupDialog.swift */,
+				0AE172B05CC5CB9C3AB479CB461B070F /* PopupDialog+Keyboard.swift */,
+				AA83912991AD8E7AF1C77BE8F833C168 /* PopupDialogButton.swift */,
+				24803B0BA2D34C0D415F5126A7159514 /* PopupDialogContainerView.swift */,
+				AE99805F934F1F4561F9310B6B2CD3F2 /* PopupDialogDefaultButtons.swift */,
+				F88B309E29EF033A596A648D423A79D0 /* PopupDialogDefaultView.swift */,
+				C34212E4ACD104AFE47ADA45FAE1944F /* PopupDialogDefaultViewController.swift */,
+				219CBEF469B66F8113573403711904D8 /* PopupDialogOverlayView.swift */,
+				E387C75EF20D9D8164E3CD4E38E16E03 /* PresentationController.swift */,
+				9E22D7BEBA856BD001EF8409A5333259 /* PresentationManager.swift */,
+				BA9D629256D03B34D9016756B648CEAC /* TransitionAnimations.swift */,
+				2988B8EBE52DB1340DBDAF68E50E323C /* TransitionAnimator.swift */,
+				B513355BE114EC0C491E4EC59C74904B /* UIImageView+Calculations.swift */,
+				91A4943CE507356A7682077DFB243295 /* UIView+Animations.swift */,
+				332CBCE07BEE4AE05ED33DC3BD0B5C71 /* UIViewController+Visibility.swift */,
+				5645FEBDE86553D158A99BF9BFC30E67 /* Support Files */,
+			);
+			name = PopupDialog;
+			path = PopupDialog;
+			sourceTree = "<group>";
+		};
+		FEBF178514965A6BC69B9928A1B2A407 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2E33D024696B9FA5BB61FCEA4F30E0EF /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
+				6D8B83044EFEA133AFEC7E5850A7DF37 /* NVActivityIndicatorAnimationBallBeat.swift */,
+				287E8CB4FD9A9FBEE77CC02069C1D7E6 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+				C67F5A835810614A098F1C66C98E093D /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				2AEA9BF7B8097603210B97DBEE36DE1D /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				519FA1E8C5EBA2AACE9769C5A38B4076 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */,
+				7FA46D7BDF0A65BB81C6DEA6CB87A84D /* NVActivityIndicatorAnimationBallGridBeat.swift */,
+				C1DE32B7E498C3FC5E71D16ED3100E9A /* NVActivityIndicatorAnimationBallGridPulse.swift */,
+				A075ACBDA9DE698025730B1F404AECAC /* NVActivityIndicatorAnimationBallPulse.swift */,
+				205549CCE203B10F7800E525B7E573E1 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
+				6044C5668A9F9C24C42552C95281A3E3 /* NVActivityIndicatorAnimationBallPulseSync.swift */,
+				B3262FFBAD2D75ADBAF906158DA16F42 /* NVActivityIndicatorAnimationBallRotate.swift */,
+				3761437C002972F1030CA501B047E8EE /* NVActivityIndicatorAnimationBallRotateChase.swift */,
+				AE42554EDF8520887C828791DF8C0357 /* NVActivityIndicatorAnimationBallScale.swift */,
+				E1CE2EA3B984D78EB2FCBB0BC9727906 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
+				57D04041756DAFD5BFA5137377A7BC25 /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
+				543418994AACC9A1BC47598474DFFAFC /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				EC4F4C77E91DC00CEFFF66D52E321E54 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				7922B2A0249D91B29B30A0ACCDD1761E /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
+				6F7A57E60D9E35CAAE250DD7959E40CE /* NVActivityIndicatorAnimationBallZigZag.swift */,
+				7EAE4788314C35AEF0AACF7A643EE3FD /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				45C5B1801F2DD32A73EDA6E94BF07A36 /* NVActivityIndicatorAnimationBlank.swift */,
+				941666C1CEA63E2E084F833ECF34CA06 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */,
+				569242CFF36E91EFC33781CB3DDB0185 /* NVActivityIndicatorAnimationCubeTransition.swift */,
+				F30DA198A2EB52E3CC63B00E99D971EC /* NVActivityIndicatorAnimationDelegate.swift */,
+				E3B25380E5BCDDB9C55CFA3803D7D514 /* NVActivityIndicatorAnimationLineScale.swift */,
+				AC3881DFF6CECCCEBE8945315D26B800 /* NVActivityIndicatorAnimationLineScaleParty.swift */,
+				300972D60BE42ABC3551AA2B7013F2BE /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
+				C23AAE3FA6C8BD4F62FFA18EEA337419 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				93A3F6569D6B5F4939FF0FB349EC7282 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				5D79E903B1333E67C11E2C50380D9040 /* NVActivityIndicatorAnimationOrbit.swift */,
+				3598259C3C54A05DE24F3F043D9E0F14 /* NVActivityIndicatorAnimationPacman.swift */,
+				E674847AD79901AE9FF693E37136ED28 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
+				D1B39D73293C7D3B1B90D56AAF082821 /* NVActivityIndicatorAnimationSquareSpin.swift */,
+				1266AC63E403CE726F20601322152E6A /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				26150D42F313B0C532602B7BBDFEB009 /* NVActivityIndicatorShape.swift */,
+				AF2CDE6FF98D509E4EFB426139D928F8 /* NVActivityIndicatorView.swift */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,11 +698,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59DAFA198C4CAB29FB1A3F83438F4AD1 /* Headers */ = {
+		77F2D3E296F92B8FCF3756086BCBEB74 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DC9D516C917823DE6F9DC515166517 /* Pods-IosProject-umbrella.h in Headers */,
+				976D24E52A2150A133B9767DFCF94AEE /* Pods-IosProject-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +736,14 @@
 			files = (
 				18643D4F9BC327B1E5B9175F4260AC0E /* DynamicBlurView-umbrella.h in Headers */,
 				37B464DA33104653FA64ACDD691F8A5F /* DynamicBlurView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AA313B3635DDFE45228E5DB9D72CD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E05B3DDE11B0EC42452E2D956F8632 /* NVActivityIndicatorView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,7 +788,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				30F95CE830BDD078D73299560735BBE7 /* PBXTargetDependency */,
+				D56DC3A233455700AA1D2F0391945646 /* PBXTargetDependency */,
 			);
 			name = PopupDialog;
 			productName = PopupDialog;
@@ -632,24 +815,43 @@
 		};
 		9F3C12385D528EF376FA504056CB8DEF /* Pods-IosProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 282B846E4A5AB03EEA53DC49E0972202 /* Build configuration list for PBXNativeTarget "Pods-IosProject" */;
+			buildConfigurationList = D9D42C93727D46EABB186BFF513FC399 /* Build configuration list for PBXNativeTarget "Pods-IosProject" */;
 			buildPhases = (
-				59DAFA198C4CAB29FB1A3F83438F4AD1 /* Headers */,
-				5C9DBA3D79B06CFE90F943048146F01E /* Sources */,
-				CFA2F426F55348149276DE2ABD191303 /* Frameworks */,
-				B90D2AF4A15AF36562E93B00E0821876 /* Resources */,
+				77F2D3E296F92B8FCF3756086BCBEB74 /* Headers */,
+				67B68078983B9802F7210D230BAA7BBE /* Sources */,
+				CAD4D9CFF9A2CE9BE0D534A77DD27126 /* Frameworks */,
+				C247C1E214E5484EB12C673B38FD674F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2275B93CFD1A94C480EED05AAED68903 /* PBXTargetDependency */,
-				20F3F66BBBA2216C0444FADDDA7E6B7A /* PBXTargetDependency */,
-				B8237AA1605A57511D85018BAC092DA0 /* PBXTargetDependency */,
-				ADC4C874DB91FA24C1BAFBD1B63F2FBF /* PBXTargetDependency */,
+				6A9344A3E41721C110FB9DC14DDCC817 /* PBXTargetDependency */,
+				1BF66A966EEC7794FF1597A98788BC0E /* PBXTargetDependency */,
+				0447B98C0FFAA6EE4EF8D0860E87C6E0 /* PBXTargetDependency */,
+				67B40CFFC1138B765EE7ABDA58553BD8 /* PBXTargetDependency */,
+				B6FBFC2818F20A00B4C60E79F2E92731 /* PBXTargetDependency */,
 			);
 			name = "Pods-IosProject";
 			productName = "Pods-IosProject";
 			productReference = 6F83C464B23D918C14268B13BEE7D1F9 /* Pods_IosProject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C2F29596E14561A060E8A2810958844 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */;
+			buildPhases = (
+				D0AA313B3635DDFE45228E5DB9D72CD1 /* Headers */,
+				4C0387043E358F7D107701AB2283882B /* Sources */,
+				71DAF6F92AAAD94899E0FD2F0C51DCAD /* Frameworks */,
+				9415F32C9895ED30BC1F35FBBCC99B47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVActivityIndicatorView;
+			productName = NVActivityIndicatorView;
+			productReference = A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */ = {
@@ -688,12 +890,13 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 227ECBE2C8EC377A0C1DEFFFE453436F /* Products */;
+			productRefGroup = 9C25E1850BA0278AE21319DCBE62C172 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */,
 				13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */,
+				AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */,
 				9F3C12385D528EF376FA504056CB8DEF /* Pods-IosProject */,
 				6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */,
 				B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */,
@@ -723,7 +926,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B90D2AF4A15AF36562E93B00E0821876 /* Resources */ = {
+		9415F32C9895ED30BC1F35FBBCC99B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C247C1E214E5484EB12C673B38FD674F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -749,11 +959,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C9DBA3D79B06CFE90F943048146F01E /* Sources */ = {
+		4C0387043E358F7D107701AB2283882B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00BA2A799CB649CC20090A5A0C368A1 /* Pods-IosProject-dummy.m in Sources */,
+				D073639EFB1D5504F6AFBDAA4676BA18 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				B134C0718B093D382DFA0A018EF1E28F /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
+				9F4487601DE06B744662316A639E7090 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				BF0B84E58E3DEEB09EF1767AF5F62467 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				B0B09FEE937FB48C19FF419E42AC2A99 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				AE10ADA994336195F3DF62DC0BBDFFF6 /* NVActivityIndicatorAnimationBallDoubleBounce.swift in Sources */,
+				2F0A0F0D1EF11FF26081AB85B924BAF9 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				BECF0A35A0012D1292BD73577E987B79 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				5143B2CFD406F5A2CDCF928590213ACC /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
+				DF54D32B832B65C6BA766DA277C31071 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				AE97C4E3169C923A3BA958DE546E502B /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				4D342EA223226DB27B6A1A049F35ACE2 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
+				39F6F08BA69383C4F45C9E2DB5247AB9 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				EE4C44DB9A3E067C7660FAA862EE11B1 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
+				F616D133446433EDF3CC65D4D61E91AD /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				6F833200EFC8C5B6FDC287573A7A6E80 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				47D5EA35A5F04B05BF8CE8926B4561CE /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				963602F41BAC27D5DC81FEBD6986BA39 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				1792253FB4C2C25168FA2152DD8DF0C2 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				2A44D897511EF2E554A26B4CE0ADF791 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				D908C3602CA4905AD9F1AC0FF447CE9F /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				3519EA46150EFDC342809478BB460764 /* NVActivityIndicatorAnimationBlank.swift in Sources */,
+				9750808FCEAC99C25DE17DA51F113A49 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */,
+				D86E23A9CC96F9ED57FB2A5D36643554 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				69076D8F9549252BE319EAE1551344F2 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
+				663C075508F804454D38C145A77F8313 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
+				8EF1CB45ED6FC85ECC3D163CFFC599C4 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				B6FA683B14B58E9D859BF1C9DEF8A27C /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				0856B93E699B588BA71FE0CE044095E4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				E7BC269660A431F5EC0ADCC5E14577AB /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				46CE037FE4D8E73482B4F9062F041040 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
+				22F67B17DFA4F0A721137347695646AF /* NVActivityIndicatorAnimationPacman.swift in Sources */,
+				E607C60452E2A0A34DD84848E2E0267E /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				F47E4E5707EB746E39CBA999CDF4DAA0 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				9BA412D0119CAD1C5A535880E81BB29B /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				7C863C610C547CE943935738F9EB2DA9 /* NVActivityIndicatorShape.swift in Sources */,
+				CB4F715622B5FDC9AC73CE162FC8AFE4 /* NVActivityIndicatorView-dummy.m in Sources */,
+				5BA2C9718F094CF84BCF2736E355ED1F /* NVActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +1016,14 @@
 				19C4DC14CC713DC68F954B6CC2F38DE7 /* DynamicBlurView.swift in Sources */,
 				535CD4014DCA990CEE8A4783486170FB /* TrackingMode.swift in Sources */,
 				7FF0649D3237A34599DA73541656009B /* UIImage+Blur.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B68078983B9802F7210D230BAA7BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A361BD565D008AFD42CA005C14568C38 /* Pods-IosProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,42 +1077,48 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		20F3F66BBBA2216C0444FADDDA7E6B7A /* PBXTargetDependency */ = {
+		0447B98C0FFAA6EE4EF8D0860E87C6E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NVActivityIndicatorView;
+			target = AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */;
+			targetProxy = 68CE57E5719FD5238BC9CE7AFAF45FAB /* PBXContainerItemProxy */;
+		};
+		1BF66A966EEC7794FF1597A98788BC0E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FSCalendar;
 			target = 13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */;
-			targetProxy = 6B9F296BB3215A09D778C6B36F010DB4 /* PBXContainerItemProxy */;
+			targetProxy = 0A709A53107FB7856B31E5B91351C5F0 /* PBXContainerItemProxy */;
 		};
-		2275B93CFD1A94C480EED05AAED68903 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DynamicBlurView;
-			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
-			targetProxy = ABF90DF0F70E2E46CB1A1C6B7A8955B6 /* PBXContainerItemProxy */;
-		};
-		30F95CE830BDD078D73299560735BBE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DynamicBlurView;
-			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
-			targetProxy = E3F30E5896D47387336EBEA711F9A4E7 /* PBXContainerItemProxy */;
-		};
-		ADC4C874DB91FA24C1BAFBD1B63F2FBF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Toast-Swift";
-			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
-			targetProxy = 739272B5F04C557A657D6770D9D23D9B /* PBXContainerItemProxy */;
-		};
-		B8237AA1605A57511D85018BAC092DA0 /* PBXTargetDependency */ = {
+		67B40CFFC1138B765EE7ABDA58553BD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PopupDialog;
 			target = 6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */;
-			targetProxy = 49D6C520ADC1D4D45F2C71D54735DD45 /* PBXContainerItemProxy */;
+			targetProxy = 90CEEF92B24AF8ABE1E44D2E4A5F377B /* PBXContainerItemProxy */;
+		};
+		6A9344A3E41721C110FB9DC14DDCC817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicBlurView;
+			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
+			targetProxy = A8381A3624F6DAA1EFE3EBDEC50E7B2C /* PBXContainerItemProxy */;
+		};
+		B6FBFC2818F20A00B4C60E79F2E92731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = 37E2380355FF59884D486253A22D2198 /* PBXContainerItemProxy */;
+		};
+		D56DC3A233455700AA1D2F0391945646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicBlurView;
+			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
+			targetProxy = CB153986863B35748B7B49F1B7CCC352 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03E76E2FE0A9366114F81640AA5875EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43A693E93120C90054C446C5284594C9 /* Toast-Swift.release.xcconfig */;
+			baseConfigurationReference = 6815C2EF7B829E09DAD14DD38A8F7A73 /* Toast-Swift.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -890,9 +1151,46 @@
 			};
 			name = Release;
 		};
+		05D04894E93228AB698D0DF7204489BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA477E15B8C2901D10DFDCE9578D1A40 /* Pods-IosProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		373D075A882B44B82D3FD491BD1FCD5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A6F090A56BB726D137F1FD6F6D60F87 /* DynamicBlurView.debug.xcconfig */;
+			baseConfigurationReference = AD260FF9DFEF8F411E7D69789818F10E /* DynamicBlurView.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -923,6 +1221,44 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		570EE487C699A9D8B1EB5DFD1B451DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3AA74686AD7BFDB19396E7F9FC7B96 /* Pods-IosProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		5B82FA55F6A12DBC8196D07B0C1EEB40 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1052,12 +1388,10 @@
 			};
 			name = Debug;
 		};
-		83E9EAAEE6EB8935698AFA8EC10818FE /* Debug */ = {
+		7338006C2D34EC84ECA4372579D2C75D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA477E15B8C2901D10DFDCE9578D1A40 /* Pods-IosProject.debug.xcconfig */;
+			baseConfigurationReference = FE8800298D2A9692E1BB1A48A623E7D8 /* NVActivityIndicatorView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1066,70 +1400,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
+				PRODUCT_NAME = NVActivityIndicatorView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9E2E4D7BBBA4415434F07528CFA2EB3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA3AA74686AD7BFDB19396E7F9FC7B96 /* Pods-IosProject.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IosProject/Pods-IosProject.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9E57772BE099315C4006DBCFA57B0A0C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E030746C1CAE290956FD86C0633E2628 /* DynamicBlurView.release.xcconfig */;
+			baseConfigurationReference = C5791914CB9A720F58717616D87544AF /* DynamicBlurView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1164,7 +1459,7 @@
 		};
 		9F065215676021E056567327E559C98D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ECE5650266491B30C194EC2515E9F3D /* PopupDialog.debug.xcconfig */;
+			baseConfigurationReference = 3189B18A544BA1625BD7CECB9C57DD21 /* PopupDialog.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1197,9 +1492,44 @@
 			};
 			name = Debug;
 		};
+		AD332A476A30499D1445D3EC2B3D33CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 532DBA3EB87D104EF20B1DB61530BE7C /* NVActivityIndicatorView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = NVActivityIndicatorView;
+				PRODUCT_NAME = NVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C646B80E4D8A9B6FB6B471288AD9746F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDC843E2D79F723FFA7592475918EA18 /* Toast-Swift.debug.xcconfig */;
+			baseConfigurationReference = 9427FC3A03EC610E583BA2BA65C9A7DA /* Toast-Swift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1233,7 +1563,7 @@
 		};
 		C911A725F1E7985B89D30E9872994D1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F97E8FD14CA6D067A154ABC84573481E /* PopupDialog.release.xcconfig */;
+			baseConfigurationReference = 9EDCBDA23B82C6DD6E75D354DA7A251E /* PopupDialog.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1269,7 +1599,7 @@
 		};
 		C9D8A777643BBEC6139AA8A963349D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9BFB27B40FD6D38F5645E4AF4946C5C /* FSCalendar.debug.xcconfig */;
+			baseConfigurationReference = E5F8DDEACC7DC2BBB6A5317135A33C0B /* FSCalendar.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1303,7 +1633,7 @@
 		};
 		C9FE9FE12E4D706F3987DC0AFBD314FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61258CCA981DE29FA027372B5F465FC5 /* FSCalendar.release.xcconfig */;
+			baseConfigurationReference = EE74852D9E9578AEEBAECE4A0F3B60B2 /* FSCalendar.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1348,20 +1678,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		282B846E4A5AB03EEA53DC49E0972202 /* Build configuration list for PBXNativeTarget "Pods-IosProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83E9EAAEE6EB8935698AFA8EC10818FE /* Debug */,
-				9E2E4D7BBBA4415434F07528CFA2EB3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C6178559BD9074C26E073DF5769DB42 /* Debug */,
 				5B82FA55F6A12DBC8196D07B0C1EEB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C2F29596E14561A060E8A2810958844 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7338006C2D34EC84ECA4372579D2C75D /* Debug */,
+				AD332A476A30499D1445D3EC2B3D33CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1389,6 +1719,15 @@
 			buildConfigurations = (
 				9F065215676021E056567327E559C98D /* Debug */,
 				C911A725F1E7985B89D30E9872994D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D42C93727D46EABB186BFF513FC399 /* Build configuration list for PBXNativeTarget "Pods-IosProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D04894E93228AB698D0DF7204489BE /* Debug */,
+				570EE487C699A9D8B1EB5DFD1B451DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

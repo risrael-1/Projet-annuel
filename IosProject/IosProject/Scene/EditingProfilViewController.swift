@@ -19,22 +19,38 @@ class EditingProfilViewController: UIViewController {
     @IBOutlet weak var phoneNumberInput: UITextField!
     @IBOutlet weak var emailInput: UITextField!
     
+    
     override func viewDidLoad() {
+        if (self.APISigninResponse == nil) {
+            let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            
+            self.navigationController?.pushViewController(loginViewController, animated: true)
+        }
+        
         super.viewDidLoad()
+        
+        
         
         self.reloadUI()
         
         
         // Do any additional setup after loading the view.
     }
-    static func newInstance(response: APISigninResponse) -> EditingProfilViewController {
+    static func newInstance(response: APISigninResponse?) -> EditingProfilViewController {
         let controller = EditingProfilViewController()
         controller.APISigninResponse = response
         return controller
     }
+    
+    @IBAction func disconnectHandler(_ sender: UIButton) {
+        self.APISigninResponse = nil
+        let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(loginViewController, animated: true)
+    }
 
     @IBAction func homeButton(_ sender: Any) {
-        let homeViewController = HomeViewController.newInstance(response: APISigninResponse)
+        let homeViewController = HomeViewController.newInstance(response: APISigninResponse, from: nil)
         
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
@@ -52,7 +68,12 @@ class EditingProfilViewController: UIViewController {
     }
     
     @IBAction func contactButton(_ sender: UIButton) {
+        
+        let contactViewController = ContactUsViewController.newInstance(response: APISigninResponse)
+        
+        self.navigationController?.pushViewController(contactViewController, animated: true)
     }
+    
     private func fetchAndReloadImageView(){
         
         if let profilePic = URL(string: self.user?.picLink ?? "https://miro.medium.com/max/978/1*pUEZd8z__1p-7ICIO1NZFA.png") {
@@ -68,7 +89,6 @@ class EditingProfilViewController: UIViewController {
         if let id = self.APISigninResponse?.userId {
             self.apiService.getUserInfos(userId: id, token: self.APISigninResponse.token ?? "", completion: { (user) in
                 DispatchQueue.main.sync {
-                    print("reussit")
                     self.user = user
                     self.fetchAndReloadImageView()
                     

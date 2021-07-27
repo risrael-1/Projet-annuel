@@ -467,6 +467,105 @@ class ApiService {
         }
         task.resume()
     }
+    
+    public func signup(fullName: String?, email: String?, password: String?, completion: @escaping (APISigninResponse?) -> Void) -> Void {
+        guard let url = URL(string: "https://benevold.herokuapp.com/auth/signup?type=ios") else {
+            completion(nil)
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let dict = ["fullName": fullName, "email": email, "password": password]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: dict, options: .fragmentsAllowed)
+
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion(nil)
+                return
+            }
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let reponseBody = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let apiResponseBody = reponseBody as? [String:Any] else {
+                completion(nil)
+                return
+            }
+            guard let apiResponse = APISigninResponseFactory.responseFromElement(apiResponseBody) else {
+                completion(nil)
+                return
+            }
+            completion(apiResponse)
+            
+        }
+        task.resume()
+    }
+    
+    public func forgottenPasswordEmailConfirmation(email: String?, completion: @escaping (String) -> Void) -> Void {
+        guard let url = URL(string: "https://benevold.herokuapp.com/auth/password/email?type=ios") else {
+            completion("")
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let dict = ["email": email]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: dict, options: .fragmentsAllowed)
+
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion("")
+                return
+            }
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let reponseBody = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let apiResponseBody = reponseBody as? [String:Any] else {
+                completion("")
+                return
+            }
+            
+            completion(apiResponseBody["user_id"] as? String ?? "")
+            
+        }
+        task.resume()
+    }
+    
+    public func resetPassword(userId: String, newPassword: String?, completion: @escaping (Bool) -> Void) -> Void {
+        guard let url = URL(string: "https://benevold.herokuapp.com/auth/password/new?type=ios") else {
+            completion(false)
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let dict = ["user_id": userId, "new_password": newPassword]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: dict, options: .fragmentsAllowed)
+
+        let task = URLSession.shared.dataTask(with: request) { (data, response, err) in
+            guard err == nil, let d = data else {
+                completion(false)
+                return
+            }
+            // try? -> permet de renvoyer nil cas d'erreur de la fonction jsonObject
+            let reponseBody = try? JSONSerialization.jsonObject(with: d, options: .allowFragments)
+            guard let apiResponseBody = reponseBody as? [String:Any] else {
+                completion(false)
+                return
+            }
+            guard let apiResponse = APIResponseFactory.responseFromElement(apiResponseBody) else {
+                completion(false)
+                return
+            }
+            completion(apiResponse.success)
+            
+        }
+        task.resume()
+    }
 }
 
 

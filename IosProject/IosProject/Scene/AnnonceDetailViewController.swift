@@ -15,6 +15,7 @@ class AnnonceDetailViewController: UIViewController {
     var user: User!
     var annonce: Annonce!
     var annonceId: String!
+    var from: String = ""
 
     @IBOutlet weak var annonceTitleLabel: UILabel!
     @IBOutlet weak var annonceDescriptionLabel: UILabel!
@@ -28,16 +29,29 @@ class AnnonceDetailViewController: UIViewController {
     @IBOutlet weak var annonceDateLabel: UILabel!
     @IBOutlet weak var annonceTimeLabel: UILabel!
     @IBOutlet weak var annonceStatusLabel: UILabel!
+    @IBOutlet weak var leftActionButton: UIButton!
     
-    static func newInstance(response: APISigninResponse, annonceId: String) -> AnnonceDetailViewController {
+    static func newInstance(response: APISigninResponse?, annonceId: String, from: String) -> AnnonceDetailViewController {
         let controller = AnnonceDetailViewController()
         controller.APISigninResponse = response
         controller.annonceId = annonceId
+        controller.from = from
         return controller
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        if (self.APISigninResponse == nil) {
+            let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            
+            self.navigationController?.pushViewController(loginViewController, animated: true)
+        }
+        
+        if from != "annonceList" {
+            self.leftActionButton.setTitle("", for: .normal)
+        }
         self.reloadUI()
     }
     
@@ -83,18 +97,28 @@ class AnnonceDetailViewController: UIViewController {
     }
 
     @IBAction func returnHandler(_ sender: UIButton) {
-        let historyViewController = HistoryViewController.newInstance(response: self.APISigninResponse)
+        let controller: UIViewController
+        if self.from == "annonceList" {
+            controller = HistoryViewController.newInstance(response: self.APISigninResponse)
+        }else {
+            controller = CalendarViewController.newInstance(response: self.APISigninResponse)
+        }
         
-        self.navigationController?.pushViewController(historyViewController, animated: true)
+        self.navigationController?.pushViewController(controller, animated: true)
         
     }
     
     
     @IBAction func takenHandler(_ sender: UIButton) {
         
+        if self.from != "annonceList" {
+            return
+        }
+        
         self.apiService.setTakenBy(token: self.APISigninResponse.token ?? "", annonce_id: self.annonceId, user_id: self.APISigninResponse.userId ?? "") { (success) in
             if (success) {
                 DispatchQueue.main.sync {
+                    
                     let historyViewController = HistoryViewController.newInstance(response: self.APISigninResponse)
                     
                     self.navigationController?.pushViewController(historyViewController, animated: true)

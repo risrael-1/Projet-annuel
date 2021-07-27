@@ -15,7 +15,7 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var annonceListTableView: UITableView!
     
     
-    static func newInstance(response: APISigninResponse) -> HistoryViewController {
+    static func newInstance(response: APISigninResponse?) -> HistoryViewController {
         let controller = HistoryViewController()
         controller.APISigninResponse = response
         return controller
@@ -23,6 +23,12 @@ class HistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (self.APISigninResponse == nil) {
+            let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            
+            self.navigationController?.pushViewController(loginViewController, animated: true)
+        }
         
         self.annonceListTableView.dataSource = self
         self.annonceListTableView.delegate = self
@@ -42,13 +48,19 @@ class HistoryViewController: UIViewController {
     
 //Barre de nav
     @IBAction func homeButton(_ sender: Any) {
-        let homeViewController = HomeViewController.newInstance(response: APISigninResponse)
+        let homeViewController = HomeViewController.newInstance(response: APISigninResponse, from: nil)
         
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
     
     @IBAction func contactButton(_ sender: UIButton) {
+        
+        let contactViewController = ContactUsViewController.newInstance(response: APISigninResponse)
+        
+        self.navigationController?.pushViewController(contactViewController, animated: true)
     }
+    
+    
     @IBAction func calendarButton(_ sender: Any) {
         let calendarViewController = CalendarViewController.newInstance(response: APISigninResponse)
         
@@ -92,7 +104,7 @@ extension HistoryViewController: UITableViewDataSource {
 extension HistoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let annonce = self.annonces[indexPath.row] // recuperer le café à la bonne ligne
-        let controller = AnnonceDetailViewController.newInstance(response: APISigninResponse, annonceId: annonce.id ?? "")
+        let controller = AnnonceDetailViewController.newInstance(response: APISigninResponse, annonceId: annonce.id ?? "", from: "annonceList")
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }

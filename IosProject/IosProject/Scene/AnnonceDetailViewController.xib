@@ -15,6 +15,7 @@
                 <outlet property="annonceStatusLabel" destination="TC5-SX-x5t" id="3Gw-h7-1Kt"/>
                 <outlet property="annonceTimeLabel" destination="1Cb-U2-3n4" id="s6Q-jX-afU"/>
                 <outlet property="annonceTitleLabel" destination="pv7-sD-HiZ" id="dKC-34-4ea"/>
+                <outlet property="leftActionButton" destination="thm-k2-EiN" id="ISt-4P-VIs"/>
                 <outlet property="userAddressLabel" destination="6op-TH-gT7" id="H7q-n3-fxL"/>
                 <outlet property="userCityLabel" destination="Vhk-0g-OPu" id="nVs-xo-Uo6"/>
                 <outlet property="userCreatedAtLabel" destination="mmO-Gy-CbL" id="1oa-e1-lMe"/>

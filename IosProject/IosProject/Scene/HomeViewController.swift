@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     var user: User!
     var annonce: Annonce!
     var message: String = ""
+    var from: String = ""
     
     @IBOutlet weak var mainView: UIView!
     
@@ -36,9 +37,12 @@ class HomeViewController: UIViewController {
     
     
     
-    static func newInstance(response: APISigninResponse) -> HomeViewController {
+    static func newInstance(response: APISigninResponse?, from: String?) -> HomeViewController {
         let controller = HomeViewController()
         controller.APISigninResponse = response
+        if from != nil {
+            controller.from = from ?? ""
+        }
         return controller
     }
     
@@ -95,6 +99,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.from != "" {
+            Toast.makeSuccessToast(text: "Connexion Réussie", view: self.view)
+        }
+        
+        if (self.APISigninResponse == nil) {
+            let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            
+            self.navigationController?.pushViewController(loginViewController, animated: true)
+        }
+        
         mainView.layer.cornerRadius = 10
         
         reloadUI()
@@ -121,7 +136,9 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func contactButton(_ sender: UIButton) {
+        let contactViewController = ContactUsViewController.newInstance(response: APISigninResponse)
         
+        self.navigationController?.pushViewController(contactViewController, animated: true)
     }
     
     @IBAction func AnnonceButton(_ sender: UIButton) {

@@ -25,6 +25,15 @@
 		61903B7826ADFA7400DDEB2D /* APIResponseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61903B7726ADFA7400DDEB2D /* APIResponseFactory.swift */; };
 		61903B7B26AE133800DDEB2D /* Annonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61903B7A26AE133800DDEB2D /* Annonce.swift */; };
 		61903B7E26AE15D100DDEB2D /* AnnonceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61903B7D26AE15D100DDEB2D /* AnnonceFactory.swift */; };
+		61A7E7D226B02A1400F6F0E8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E7D026B02A1400F6F0E8 /* SignupViewController.swift */; };
+		61A7E7D326B02A1400F6F0E8 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A7E7D126B02A1400F6F0E8 /* SignupViewController.xib */; };
+		61A7E7D726B0316D00F6F0E8 /* ForgottenPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E7D526B0316D00F6F0E8 /* ForgottenPasswordViewController.swift */; };
+		61A7E7D826B0316D00F6F0E8 /* ForgottenPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A7E7D626B0316D00F6F0E8 /* ForgottenPasswordViewController.xib */; };
+		61A7E7DC26B0357800F6F0E8 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E7DA26B0357800F6F0E8 /* ChangePasswordViewController.swift */; };
+		61A7E7DD26B0357800F6F0E8 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A7E7DB26B0357800F6F0E8 /* ChangePasswordViewController.xib */; };
+		61A7E7E126B03B7A00F6F0E8 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E7DF26B03B7A00F6F0E8 /* ContactUsViewController.swift */; };
+		61A7E7E226B03B7A00F6F0E8 /* ContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A7E7E026B03B7A00F6F0E8 /* ContactUsViewController.xib */; };
+		61A7E7E526B0514000F6F0E8 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7E7E426B0514000F6F0E8 /* Toast.swift */; };
 		61D38A4426AEF92400D39636 /* APIStringResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D38A4326AEF92400D39636 /* APIStringResponse.swift */; };
 		61D38A4726AEF98D00D39636 /* APIStringResponseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D38A4626AEF98D00D39636 /* APIStringResponseFactory.swift */; };
 		64839DD4269630F2002951F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64839DD3269630F2002951F9 /* AppDelegate.swift */; };
@@ -64,6 +73,15 @@
 		61903B7726ADFA7400DDEB2D /* APIResponseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseFactory.swift; sourceTree = "<group>"; };
 		61903B7A26AE133800DDEB2D /* Annonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annonce.swift; sourceTree = "<group>"; };
 		61903B7D26AE15D100DDEB2D /* AnnonceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnonceFactory.swift; sourceTree = "<group>"; };
+		61A7E7D026B02A1400F6F0E8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		61A7E7D126B02A1400F6F0E8 /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		61A7E7D526B0316D00F6F0E8 /* ForgottenPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordViewController.swift; sourceTree = "<group>"; };
+		61A7E7D626B0316D00F6F0E8 /* ForgottenPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgottenPasswordViewController.xib; sourceTree = "<group>"; };
+		61A7E7DA26B0357800F6F0E8 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		61A7E7DB26B0357800F6F0E8 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		61A7E7DF26B03B7A00F6F0E8 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		61A7E7E026B03B7A00F6F0E8 /* ContactUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsViewController.xib; sourceTree = "<group>"; };
+		61A7E7E426B0514000F6F0E8 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		61D38A4326AEF92400D39636 /* APIStringResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStringResponse.swift; sourceTree = "<group>"; };
 		61D38A4626AEF98D00D39636 /* APIStringResponseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStringResponseFactory.swift; sourceTree = "<group>"; };
 		64839DD0269630F2002951F9 /* IosProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +181,14 @@
 				64F5901226AB4D3D008DF13F /* LoginViewController.xib */,
 				6102E14926AECBBD00CE61F9 /* AnnonceDetailViewController.swift */,
 				6102E14A26AECBBD00CE61F9 /* AnnonceDetailViewController.xib */,
+				61A7E7D026B02A1400F6F0E8 /* SignupViewController.swift */,
+				61A7E7D126B02A1400F6F0E8 /* SignupViewController.xib */,
+				61A7E7D526B0316D00F6F0E8 /* ForgottenPasswordViewController.swift */,
+				61A7E7D626B0316D00F6F0E8 /* ForgottenPasswordViewController.xib */,
+				61A7E7DA26B0357800F6F0E8 /* ChangePasswordViewController.swift */,
+				61A7E7DB26B0357800F6F0E8 /* ChangePasswordViewController.xib */,
+				61A7E7DF26B03B7A00F6F0E8 /* ContactUsViewController.swift */,
+				61A7E7E026B03B7A00F6F0E8 /* ContactUsViewController.xib */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -178,6 +204,7 @@
 				61903B7A26AE133800DDEB2D /* Annonce.swift */,
 				61D38A4326AEF92400D39636 /* APIStringResponse.swift */,
 				617BF2AB26AF890D0039D9CF /* APIIntegerResponse.swift */,
+				61A7E7E426B0514000F6F0E8 /* Toast.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,10 +288,14 @@
 				64F5901426AB4D3D008DF13F /* LoginViewController.xib in Resources */,
 				64839DDD269630F3002951F9 /* Assets.xcassets in Resources */,
 				64F5900F26AB4A72008DF13F /* ScreenViewController.xib in Resources */,
+				61A7E7E226B03B7A00F6F0E8 /* ContactUsViewController.xib in Resources */,
+				61A7E7DD26B0357800F6F0E8 /* ChangePasswordViewController.xib in Resources */,
 				6102E14C26AECBBD00CE61F9 /* AnnonceDetailViewController.xib in Resources */,
 				64839E17269638B5002951F9 /* EditingProfilViewController.xib in Resources */,
 				64839DEF26963135002951F9 /* HomeViewController.xib in Resources */,
+				61A7E7D326B02A1400F6F0E8 /* SignupViewController.xib in Resources */,
 				64839DF526963174002951F9 /* CalendarViewController.xib in Resources */,
+				61A7E7D826B0316D00F6F0E8 /* ForgottenPasswordViewController.xib in Resources */,
 				64839E422698D223002951F9 /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A7E7D226B02A1400F6F0E8 /* SignupViewController.swift in Sources */,
 				64F5900E26AB4A72008DF13F /* ScreenViewController.swift in Sources */,
 				61903B6326ADC62E00DDEB2D /* APISigninResponse.swift in Sources */,
 				61D38A4426AEF92400D39636 /* APIStringResponse.swift in Sources */,
@@ -328,17 +360,21 @@
 				64839E142696389F002951F9 /* EditingProfilViewController.swift in Sources */,
 				61903B6C26ADCD6300DDEB2D /* APISingleResponse.swift in Sources */,
 				61903B7B26AE133800DDEB2D /* Annonce.swift in Sources */,
+				61A7E7E526B0514000F6F0E8 /* Toast.swift in Sources */,
 				61903B5D26ADB44300DDEB2D /* APIMultipleResponseFactory.swift in Sources */,
+				61A7E7DC26B0357800F6F0E8 /* ChangePasswordViewController.swift in Sources */,
 				61903B7E26AE15D100DDEB2D /* AnnonceFactory.swift in Sources */,
 				64F5901326AB4D3D008DF13F /* LoginViewController.swift in Sources */,
 				6102E14B26AECBBD00CE61F9 /* AnnonceDetailViewController.swift in Sources */,
 				61903B5626ADB2AD00DDEB2D /* APIMutilpleResponse.swift in Sources */,
+				61A7E7E126B03B7A00F6F0E8 /* ContactUsViewController.swift in Sources */,
 				61903B5A26ADB2D600DDEB2D /* ApiService.swift in Sources */,
 				61903B6F26ADD76700DDEB2D /* ImageService.swift in Sources */,
 				61903B6026ADB7D900DDEB2D /* UserFactory.swift in Sources */,
 				64F5901826AB5280008DF13F /* user.swift in Sources */,
 				61903B6926ADCD5200DDEB2D /* APISingleResponseFactory.swift in Sources */,
 				64839E412698D223002951F9 /* HistoryViewController.swift in Sources */,
+				61A7E7D726B0316D00F6F0E8 /* ForgottenPasswordViewController.swift in Sources */,
 				61903B7826ADFA7400DDEB2D /* APIResponseFactory.swift in Sources */,
 				61D38A4726AEF98D00D39636 /* APIStringResponseFactory.swift in Sources */,
 				64839DEE26963135002951F9 /* HomeViewController.swift in Sources */,
